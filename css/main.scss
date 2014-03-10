@@ -1,0 +1,266 @@
+@import url(http://fonts.googleapis.com/css?family=Cardo:400,700);
+
+body {
+	background-color: #010004;
+	//font-family: Gobold;
+	font-family: 'Cardo', serif;
+	//text-align: center;
+}
+
+a, a:hover, a:active, a:focus {
+	outline: 0;
+	border: 0;
+	color: #000;
+	text-decoration: none;
+}
+
+/*@font-face {
+	font-family: Gobold;
+	src: url('../fonts/glyphicons-halflings-regular.ttf');
+}*/
+
+h1, h2, h3 {
+	font-family: 'Cardo', serif;
+	font-weight: bold;
+}
+
+h3 {
+	font-size: 1.3em;
+	margin-bottom: 0;
+}
+
+.pages {
+	background-color: #fff;
+}
+
+#container {
+	//width: 900px;
+	//margin: 0 auto;
+	//max-width: 1600px;
+	text-align: center;
+	overflow: hidden;
+}
+
+#home_logo {
+	background: url('../images/mk_logo_large.png') top center no-repeat;
+	width: 172px;
+	height: 203px;
+	margin: 50px 0 0 50px;
+}
+
+nav a {
+	font: 0/0 a;
+  	text-shadow: none;
+  	color: transparent;
+  	display: inline-block;
+  	margin-right: 75px;
+}
+
+#bottom_nav a {
+  	height: 24px;
+}
+
+#shop, #collections, #films, #about, #contact {
+	height: 22px;
+	vertical-align: top;
+	margin-top: 30px;
+}
+
+#shop, #shop_home {
+	width: 39px;
+}
+
+#collections, #collections_home {
+	width: 98px;
+	height: 19px;
+}
+
+#shop, #collections, #films, #about, #contact {
+	&:hover {
+		border-bottom: 1px solid #000;
+	}
+}
+
+#shop_home, #collections_home, #films_home, #about_home, #contact_home {
+	&:hover {
+		border-bottom: 1px solid #fff;
+	}
+}
+
+#shop {
+	background: url('../images/menu_shop_black.png') top center no-repeat;
+	width: 39px;
+	//height: 19px;
+}
+
+#shop_home {
+	background: url('../images/menu_shop_white.png') top center no-repeat;
+}
+
+#collections {
+	background: url('../images/menu_collections_black.png') top center no-repeat;
+}
+
+#collections_home {
+	background: url('../images/menu_collections_white.png') top center no-repeat;
+}
+
+#films {
+	background: url('../images/menu_films_black.png') top center no-repeat;
+	width: 46px; // too wide
+}
+
+#films_home {
+	background: url('../images/menu_films_white.png') top center no-repeat;
+	width: 45px;
+}
+
+#about {
+	background: url('../images/menu_about_black.png') top center no-repeat; // wrong image
+	width: 64px;
+	height: 22px;
+}
+
+#about_home {
+	background: url('../images/menu_about_white.png') top center no-repeat;
+	width: 47px;
+}
+
+#contact {
+	background: url('../images/menu_contact_black.png') top center no-repeat;
+	width: 65px;
+	height: 19px;
+}
+
+#contact_home {
+	background: url('../images/menu_contact_white.png') top center no-repeat;
+	width: 64px;
+}
+
+#header, #sidebar {
+	display: none;
+}
+
+.pages {
+	#header, #sidebar {
+		display: inline-block;
+	}
+	#header {
+		vertical-align: top;
+		margin-top: 50px;
+	}
+	#bottom_nav {
+		display: none;
+	}
+	#home_logo {
+		display: none;
+	}
+}
+
+#sidebar {
+	background: url('../images/mk_logo_small.png') top center no-repeat;
+	width: 88px;
+	height: 104px;
+	//margin: 25px 50px 0 0;
+}
+
+#content {
+	position: relative;
+	top: -30px;
+	//left: 90px;
+	//margin: -30px 0 0 90px;
+	//margin: 0 auto;
+	//width: 1120px;
+	/*position: relative;
+	top: -20px;
+	left: 50px;*/
+}
+
+#about_main {
+	left: 54px;
+	position: relative;
+	/*top: -20px;
+	left: 50px;*/
+}
+
+#contact_main {
+	position: relative;
+	left: 10px;
+	//right: 80px;
+}
+
+// About
+
+#about_main article {
+	margin-top: 30px;
+}
+
+#about_description {
+	width: 700px;
+	margin: 0 auto;
+}
+
+#about_feature, #contact_feature {
+	//width: 642px;
+	display: inline-block;
+}
+
+#about_feature img {
+	max-width: 100%;
+}
+
+#find_career a {
+	font-weight: bold;
+}
+
+// Careers
+#career_contact a {
+	font-style: italic;
+	font-weight: bold;
+}
+
+// Contact
+
+#contact_feature {
+	//display: inline-block;
+	img {
+		max-width: 100%;
+	}
+}
+
+#contact_email {
+	display: inline-block;
+	text-align: left;
+	margin-left: 20px;
+}
+
+#inquiries {
+	margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 860px) {
+	#container {
+		text-align: left;
+		margin-left: 50px;
+	}
+	.pages #header {
+		margin-top: 0;
+		display: block;
+
+	}
+	#about_main {
+		top: 10px;
+		left: 0;
+	}
+	#content {
+		top: 30px;
+		left: 0;
+		//margin: 30px 0 0;
+	}
+	#about_description {
+		width: 100%;
+	}
+	#top_nav a {
+		display: block;
+	}
+}
