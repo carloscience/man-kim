@@ -254,6 +254,11 @@ DR.ThumbnailView = Backbone.Layout.extend({
   });*/
 
 $(document).ready(function() {
+
+  $('.fancybox').fancybox({
+    padding : 0,
+    openEffect  : 'elastic'
+  });
   //$("html, body").animate({ scrollTop: 0 });
   $('.topnav').on('click', function(e) {
       $('.topnav').each(function(data) {
@@ -267,9 +272,9 @@ $(document).ready(function() {
     $('#drop_menu').show();
   });
 
-  /*$('#drop_menu').on('mouseleave', function(e) {
+  $('#drop_menu').on('mouseleave', function(e) {
     $(this).hide();
-  });*/
+  });
   
   MK.about = new MK.About();
   MK.contact = new MK.Contact();

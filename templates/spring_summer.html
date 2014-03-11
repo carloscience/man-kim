@@ -1,8 +1,8 @@
-
- 		<h2>Spring Summer Collection</h2>
-
- 		<ul>
- 		<% _.each(model, function(cl) { %>
-			<li><a href="images/ss_slides/<%= cl.name %>SLIDE.jpg" id="<%= cl.name %>" title="<%= cl.name %>"><img src="images/ss_thumbnails/<%= cl.name %>.jpg" /></a></li>
-		<% }); %>
-		</ul>
+<section id="showCollections">
+ 	<h2 class="black_outline">Spring/Summer 2014</h2>
+	<% _.each(model, function(cl) { %>
+		<div id="align_thumbnail" class="spring_summer">
+			<a href="images/ss_slides/<%= cl.name %>SLIDE.jpg" id="<%= cl.name %>" class="fancybox" rel="spring_summer" title="<%= cl.name %>"><img src="images/ss_thumbnails/<%= cl.name %>.jpg" /></a>
+		</div>
+	<% }); %>
+</section>

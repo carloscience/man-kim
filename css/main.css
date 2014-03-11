@@ -1,220 +1,393 @@
 @import url(http://fonts.googleapis.com/css?family=Cardo:400,700);
+/* line 3, main.scss */
 body {
   background-color: #010004;
-  font-family: "Cardo", serif; }
+  font-family: 'Cardo', serif;
+}
 
+/* line 10, main.scss */
 a, a:hover, a:active, a:focus {
   outline: 0;
   border: 0;
   color: #000;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 @font-face {
   font-family: Gobold;
-  src: url("../fonts/Gobold.ttf"); }
+  src: url("../fonts/Gobold.ttf");
+}
 
+/* line 22, main.scss */
 h1 {
-  font-family: "Gobold", serif; }
+  font-family: 'Gobold', serif;
+}
 
+/* line 26, main.scss */
 h2, h3 {
-  font-family: "Cardo", serif;
-  font-weight: bold; }
+  font-family: 'Cardo', serif;
+  font-weight: bold;
+}
 
+/* line 31, main.scss */
 h3 {
   font-size: 1.3em;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+}
 
+/* line 36, main.scss */
 ul {
-  list-style: none; }
+  list-style: none;
+}
 
+/* line 40, main.scss */
 .pages {
-  background-color: #fff; }
+  background-color: #fff;
+}
 
+/* line 44, main.scss */
 #container {
   text-align: center;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
+/* line 52, main.scss */
 #home_logo {
   background: url("../images/mk_logo_large.png") top center no-repeat;
   width: 207px;
   height: 203px;
-  margin: 50px 0 0 50px; }
+  margin: 50px 0 0 50px;
+}
 
+/* line 59, main.scss */
 nav a {
+  display: inline-block;
+  margin-right: 75px;
+}
+
+/* line 64, main.scss */
+.topnav {
   font: 0/0 a;
   text-shadow: none;
   color: transparent;
-  display: inline-block;
-  margin-right: 75px; }
+}
 
+/* line 70, main.scss */
 #bottom_nav a {
-  height: 24px; }
+  height: 24px;
+}
 
+/* line 74, main.scss */
 #shop, #collections, #films, #about, #contact {
   height: 22px;
   vertical-align: top;
-  margin-top: 30px; }
+  margin-top: 30px;
+}
 
+/* line 80, main.scss */
 #shop, #shop_home {
-  width: 39px; }
+  width: 39px;
+}
 
+/* line 84, main.scss */
 #collections, #collections_home {
-  width: 98px; }
+  width: 98px;
+}
 
+/* line 89, main.scss */
 .topnav:hover {
-  border-bottom: 1px solid black; }
+  border-bottom: 1px solid #000;
+}
 
+/* line 94, main.scss */
 .ulineBlack {
-  border-bottom: 1px solid black; }
+  border-bottom: 1px solid #000;
+}
 
+/* line 99, main.scss */
 #shop_home:hover, #collections_home:hover, #films_home:hover, #about_home:hover, #contact_home:hover {
-  border-bottom: 1px solid white; }
+  border-bottom: 1px solid #fff;
+}
 
+/* line 104, main.scss */
 #shop {
   background: url("../images/menu_shop_black.png") top center no-repeat;
-  width: 39px; }
+  width: 39px;
+}
 
+/* line 110, main.scss */
 #shop_home {
-  background: url("../images/menu_shop_white.png") top center no-repeat; }
+  background: url("../images/menu_shop_white.png") top center no-repeat;
+}
 
+/* line 114, main.scss */
 #collections {
-  background: url("../images/menu_collections_black.png") top center no-repeat; }
+  background: url("../images/menu_collections_black.png") top center no-repeat;
+}
 
+/* line 118, main.scss */
 #collections_home {
-  background: url("../images/menu_collections_white.png") top center no-repeat; }
+  background: url("../images/menu_collections_white.png") top center no-repeat;
+}
 
+/* line 122, main.scss */
 #films {
   background: url("../images/menu_films_black.png") top center no-repeat;
-  width: 46px; }
+  width: 46px;
+}
 
+/* line 127, main.scss */
 #films_home {
   background: url("../images/menu_films_white.png") top center no-repeat;
-  width: 45px; }
+  width: 45px;
+}
 
+/* line 132, main.scss */
 #about {
   background: url("../images/menu_about_black.png") top center no-repeat;
-  width: 47px; }
+  width: 47px;
+}
 
+/* line 137, main.scss */
 #about_home {
   background: url("../images/menu_about_white.png") top center no-repeat;
-  width: 47px; }
+  width: 47px;
+}
 
+/* line 142, main.scss */
 #contact {
   background: url("../images/menu_contact_black.png") top center no-repeat;
-  width: 65px; }
+  width: 65px;
+}
 
+/* line 147, main.scss */
 #contact_home {
   background: url("../images/menu_contact_white.png") top center no-repeat;
-  width: 64px; }
+  width: 64px;
+}
 
-#drop_menu {
-  display: none;
+/* line 152, main.scss */
+.dropdown_nav {
+  display: inline-block;
+  vertical-align: top;
   position: relative;
-  top: -50px;
-  right: 90px; }
-  #drop_menu a {
-    display: block; }
+}
 
+/* line 158, main.scss */
+nav #drop_menu {
+  display: none;
+  width: 140px;
+}
+/* line 161, main.scss */
+nav #drop_menu a {
+  display: block;
+  color: #767676;
+  font-family: 'Gobold', serif;
+}
+
+/* line 168, main.scss */
+#showCollections {
+  max-width: 1000px;
+  margin: 20px auto 0 auto;
+}
+
+/* line 173, main.scss */
+.black_outline {
+  background-color: #000;
+  color: #fff;
+  width: 222px;
+  font-family: 'Gobold', serif;
+  margin: 0 auto 30px auto;
+  font-weight: normal;
+  font-size: 24px;
+}
+
+/* line 183, main.scss */
+#align_thumbnail {
+  display: inline-block;
+}
+/* line 185, main.scss */
+#align_thumbnail img {
+  width: 100%;
+}
+
+/* line 190, main.scss */
+.portrait {
+  width: 20%;
+  margin: 0 13px 20px 0;
+}
+
+/* line 195, main.scss */
+.spring_summer {
+  width: 25%;
+  margin: 0 13px 20px 0;
+}
+
+/* line 200, main.scss */
+.landscape {
+  width: 30%;
+  margin: 0 23px 20px 0;
+}
+
+/* line 205, main.scss */
 #header, #sidebar {
-  display: none; }
+  display: none;
+}
 
+/* line 210, main.scss */
 .pages #header, .pages #sidebar {
-  display: inline-block; }
+  display: inline-block;
+}
+/* line 213, main.scss */
 .pages #header {
   vertical-align: top;
-  margin-top: 50px; }
+  margin-top: 50px;
+}
+/* line 217, main.scss */
 .pages #bottom_nav {
-  display: none; }
+  display: none;
+}
+/* line 220, main.scss */
 .pages #home_logo {
-  display: none; }
+  display: none;
+}
 
+/* line 225, main.scss */
 #sidebar {
   background: url("../images/mk_logo_small.png") top center no-repeat;
   width: 103px;
-  height: 108px; }
+  height: 108px;
+}
 
+/* line 232, main.scss */
 #content {
   position: relative;
   top: -30px;
   /*position: relative;
   top: -20px;
-  left: 50px;*/ }
+  left: 50px;*/
+}
 
+/* line 244, main.scss */
 #about_main {
   left: 54px;
   position: relative;
   /*top: -20px;
-  left: 50px;*/ }
+  left: 50px;*/
+}
 
+/* line 251, main.scss */
 #contact_main {
   position: relative;
-  left: 10px; }
+  left: 10px;
+}
 
+/* line 259, main.scss */
 #about_main article {
-  margin-top: 30px; }
+  margin-top: 30px;
+}
 
+/* line 263, main.scss */
 #about_description {
   width: 700px;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
+/* line 268, main.scss */
 #about_feature, #contact_feature {
-  display: inline; }
+  display: inline;
+}
 
+/* line 273, main.scss */
 #about_feature img {
-  max-width: 100%; }
+  max-width: 100%;
+}
 
+/* line 278, main.scss */
 #about_download a {
-  font-weight: bold; }
+  font-weight: bold;
+}
 
+/* line 283, main.scss */
 #find_career a {
-  font-weight: bold; }
+  font-weight: bold;
+}
 
+/* line 290, main.scss */
 #careers_main h1 {
-  margin-bottom: 100px; }
+  margin-bottom: 100px;
+}
 
+/* line 295, main.scss */
 #career_contact {
-  margin: 50px 0 0 15px; }
-  #career_contact a {
-    font-style: italic;
-    font-weight: bold; }
+  margin: 50px 0 0 15px;
+}
+/* line 297, main.scss */
+#career_contact a {
+  font-style: italic;
+  font-weight: bold;
+}
 
+/* line 303, main.scss */
 #career_list {
   text-align: left;
-  margin-left: 325px; }
-  #career_list li {
-    font-weight: bold;
-    line-height: 35px; }
+  margin-left: 325px;
+}
+/* line 306, main.scss */
+#career_list li {
+  font-weight: bold;
+  line-height: 35px;
+}
 
+/* line 316, main.scss */
 #contact_feature img {
-  max-width: 100%; }
+  max-width: 100%;
+}
 
+/* line 321, main.scss */
 #contact_email {
   display: inline-block;
   text-align: left;
-  margin-left: 20px; }
+  margin-left: 20px;
+}
 
+/* line 327, main.scss */
 #inquiries {
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+}
 
 @media only screen and (max-width: 860px) {
+  /* line 332, main.scss */
   #container {
     text-align: left;
-    margin-left: 50px; }
+    margin-left: 50px;
+  }
 
+  /* line 336, main.scss */
   .pages #header {
     margin-top: 0;
-    display: block; }
+    display: block;
+  }
 
+  /* line 341, main.scss */
   #about_main {
     top: 10px;
-    left: 0; }
+    left: 0;
+  }
 
+  /* line 345, main.scss */
   #content {
     top: 30px;
-    left: 0; }
+    left: 0;
+  }
 
+  /* line 350, main.scss */
   #about_description {
-    width: 100%; }
+    width: 100%;
+  }
 
+  /* line 353, main.scss */
   #top_nav a {
-    display: block; } }
+    display: block;
+  }
+}

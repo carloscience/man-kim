@@ -1,73 +1,96 @@
 {
     "fall_winter": [
      {
-        "name": "1jacketCUside"
+        "name": "1jacketCUside",
+        "mode": "portrait"
      },
      {
-        "name": "2jacketfrontfull"
+        "name": "2jacketfrontfull",
+        "mode": "portrait"
      },
      {
-        "name": "3jacketside"
+        "name": "3jacketside",
+        "mode": "portrait"
      },
      {
-        "name": "4croptop"
+        "name": "4croptop",
+        "mode": "portrait"
      },
      {
-        "name": "5croptopfull"
+        "name": "5croptopfull",
+        "mode": "portrait"
      },
      {
-        "name": "6frontdressms"
+        "name": "6frontdressms",
+        "mode": "portrait"
      },
      {
-        "name": "7frontreddresscu"
+        "name": "7frontreddresscu",
+        "mode": "portrait"
      },
      {
-        "name": "8blouseandslacksfull"
+        "name": "8blouseandslacksfull",
+        "mode": "portrait"
      },
      {
-        "name": "9blackblousems"
+        "name": "9blackblousems",
+        "mode": "portrait"
      },
      {
-        "name": "10jacketfulllength"
+        "name": "10jacketfulllength",
+        "mode": "portrait"
      },
      {
-        "name": "11wrapjacketdetail"
+        "name": "11wrapjacketdetail",
+        "mode": "portrait"
      },
      {
-        "name": "12handtiesdetail"
+        "name": "12handtiesdetail",
+        "mode": "portrait"
      },
      {
-        "name": "13cocktailtopfront"
+        "name": "13cocktailtopfront",
+        "mode": "landscape"
      },
      {
-        "name": "14cocktailbottom"
+        "name": "14cocktailbottom",
+        "mode": "landscape"
      },
      {
-        "name": "15cocktaildressms"
+        "name": "15cocktaildressms",
+        "mode": "portrait"
      },
      {
-        "name": "16kimonoarmscrossed"
+        "name": "16kimonoarmscrossed",
+        "mode": "portrait"
      },
      {
-        "name": "17sheershirt"
+        "name": "17sheershirt",
+        "mode": "portrait"
      },
      {
-        "name": "18kimonoback"
+        "name": "18kimonoback",
+        "mode": "portrait"
      },
      {
-        "name": "19kimonofrontarmsopen"
+        "name": "19kimonofrontarmsopen",
+        "mode": "portrait"
      },
      {
-        "name": "20dressclose-upside"
+        "name": "20dressclose-upside",
+        "mode": "portrait"
      },
      {
-        "name": "21dressfullfront"
+        "name": "21dressfullfront",
+        "mode": "portrait"
      },
      {
-        "name": "22dresfullback"
+        "name": "22dresfullback",
+        "mode": "portrait"
      },
      {
-        "name": "23dresscuback"
+        "name": "23dresscuback",
+        "mode": "portrait"
      }],
      "spring_summer": [
      {

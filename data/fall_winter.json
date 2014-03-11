@@ -1,19 +1,24 @@
 {
     "fall_winter": [
      {
-        "name": "1jacketCUside.jpg"
+        "name": "1jacketCUside.jpg",
+        "mode": "portrait"
      },
      {
-        "name": "2jacketfrontfull.jpg"
+        "name": "2jacketfrontfull.jpg",
+        "mode": "portrait"
      },
      {
-        "name": "3jacketside.jpg"
+        "name": "3jacketside.jpg",
+        "mode": "portrait"
      },
      {
-        "name": "4croptop.jpg"
+        "name": "4croptop.jpg",
+        "mode": "portrait"
      },
      {
-        "name": "5croptopfull.jpg"
+        "name": "5croptopfull.jpg",
+        "mode": "portrait"
      },
      {
         "name": "6frontdressms.jpg"
