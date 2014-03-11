@@ -1,0 +1,8 @@
+
+ 		<h2>Fall Winter Collection</h2>
+
+ 		<ul>
+ 		<% _.each(model, function(cl) { %>
+			<li><a href="images/fw_slides/<%= cl.name %>SLIDE'" id="<%= cl.name %>" title="<%= cl.name %>"><img src="images/<%= cl.name %>" /></a></li>
+		<% }); %>
+		</ul>

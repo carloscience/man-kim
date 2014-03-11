@@ -146,6 +146,16 @@ nav a {
 	width: 64px;
 }
 
+#drop_menu {
+	display: none;
+	position: relative;
+	top: -50px;
+	right: 90px;
+	a {
+		display: block;
+	}
+}
+
 #header, #sidebar {
 	display: none;
 }

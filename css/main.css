@@ -107,6 +107,14 @@ nav a {
   background: url("../images/menu_contact_white.png") top center no-repeat;
   width: 64px; }
 
+#drop_menu {
+  display: none;
+  position: relative;
+  top: -50px;
+  right: 90px; }
+  #drop_menu a {
+    display: block; }
+
 #header, #sidebar {
   display: none; }
 

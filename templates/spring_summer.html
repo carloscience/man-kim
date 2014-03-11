@@ -1,0 +1,8 @@
+
+ 		<h2>Spring Summer Collection</h2>
+
+ 		<ul>
+ 		<% _.each(model, function(cl) { %>
+			<li><a href="images/ss_slides/<%= cl.name %>SLIDE.jpg" id="<%= cl.name %>" title="<%= cl.name %>"><img src="images/ss_thumbnails/<%= cl.name %>.jpg" /></a></li>
+		<% }); %>
+		</ul>

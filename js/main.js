@@ -24,9 +24,15 @@ Backbone.Layout.configure({
     var done = this.async();
 
     // Seek out the template asynchronously.
-    $.get(path, function(contents) {
-      done(_.template(contents));
-    }, "text");
+    $.ajax({
+      cache: false, // set cache to false for IE
+      type: 'GET',
+      url: path,
+      dataType: 'text',
+      success: function(contents) {
+          done(_.template(contents));
+      }
+    });
   }
 });
 
@@ -36,7 +42,9 @@ MK.Router = Backbone.Router.extend({
     '': 'index',
     '!index': 'index',
     '!shop': 'shop',
-    '!collections': 'collections',
+    '!collections': 'fallWinter',
+    '!fall-winter': 'fallWinter',
+    '!spring-summer': 'springSummer',
     '!films': 'films',
     '!about': 'about',
     '!careers': 'careers',
@@ -61,6 +69,16 @@ MK.Router = Backbone.Router.extend({
   collections: function() {
     console.log('got collections');
     MK.addHeaderSidebar();
+  },
+
+  fallWinter: function() {
+    MK.addHeaderSidebar();
+    MK.getCollection('fall_winter');
+  },
+
+  springSummer: function() {
+    MK.addHeaderSidebar();
+    MK.getCollection('spring_summer');
   },
 
   films: function() {
@@ -95,6 +113,40 @@ MK.addHeaderSidebar = function() {
     $('body').addClass('pages');
   }
 }
+
+MK.getCollection = function(collection) {
+  $.getJSON('data/collections.json', function(data) {
+    console.log('collection is ' + data);
+        $.extend(MK.data, data);
+        model = data[collection];
+        switch (collection) {
+          case 'fall_winter':
+            MK.fallWinter = new MK.FallWinter({data: model});
+            break;
+          case 'spring_summer':
+            MK.springSummer = new MK.SpringSummer({data: model});
+            break;
+        }
+  });
+}
+
+MK.FallWinter = Backbone.Layout.extend({
+  template: 'fall_winter',
+  el: '#content',
+  initialize: function() {
+    console.log('collection initialized');
+    this.render();
+  }
+});
+
+MK.SpringSummer = Backbone.Layout.extend({
+  template: 'spring_summer',
+  el: '#content',
+  initialize: function() {
+    console.log('collection initialized');
+    this.render();
+  }
+});
 
 MK.Shop = Backbone.Layout.extend({
     template: 'shop', // load home template
@@ -209,6 +261,15 @@ $(document).ready(function() {
         $(e.currentTarget).addClass('ulineBlack');
       });
   });
+
+  $('#collections').on('mouseenter', function(e) {
+    console.log('rolling over collection');
+    $('#drop_menu').show();
+  });
+
+  /*$('#drop_menu').on('mouseleave', function(e) {
+    $(this).hide();
+  });*/
   
   MK.about = new MK.About();
   MK.contact = new MK.Contact();

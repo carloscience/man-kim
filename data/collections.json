@@ -1,0 +1,100 @@
+{
+    "fall_winter": [
+     {
+        "name": "1jacketCUside"
+     },
+     {
+        "name": "2jacketfrontfull"
+     },
+     {
+        "name": "3jacketside"
+     },
+     {
+        "name": "4croptop"
+     },
+     {
+        "name": "5croptopfull"
+     },
+     {
+        "name": "6frontdressms"
+     },
+     {
+        "name": "7frontreddresscu"
+     },
+     {
+        "name": "8blouseandslacksfull"
+     },
+     {
+        "name": "9blackblousems"
+     },
+     {
+        "name": "10jacketfulllength"
+     },
+     {
+        "name": "11wrapjacketdetail"
+     },
+     {
+        "name": "12handtiesdetail"
+     },
+     {
+        "name": "13cocktailtopfront"
+     },
+     {
+        "name": "14cocktailbottom"
+     },
+     {
+        "name": "15cocktaildressms"
+     },
+     {
+        "name": "16kimonoarmscrossed"
+     },
+     {
+        "name": "17sheershirt"
+     },
+     {
+        "name": "18kimonoback"
+     },
+     {
+        "name": "19kimonofrontarmsopen"
+     },
+     {
+        "name": "20dressclose-upside"
+     },
+     {
+        "name": "21dressfullfront"
+     },
+     {
+        "name": "22dresfullback"
+     },
+     {
+        "name": "23dresscuback"
+     }],
+     "spring_summer": [
+     {
+        "name": "1sheerblousems"
+     },
+     {
+        "name": "2sheerblousems"
+     },
+     {
+        "name": "3sleevelessdress"
+     },
+     {
+        "name": "4sheerblackdress"
+     },
+     {
+        "name": "5slipdress"
+     },
+     {
+        "name": "6frontslipdress"
+     },
+     {
+        "name": "7kimonoback"
+     },
+     {
+        "name": "8kimonoopen"
+     },
+     {
+        "name": "9kimonofront"
+     }]
+}
