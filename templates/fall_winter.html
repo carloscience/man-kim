@@ -1,5 +1,8 @@
 <section id="showCollections">
  	<h2 class="black_outline">Fall/Winter 2014-15</h2>
+ 	<div id="header_graphic">
+ 		<img src="images/header.jpg" />
+ 	</div>
  	<% _.each(model, function(cl) { %>
  		<div id="align_thumbnail" class="<%= cl.mode %>">
 			<a href="images/fw_slides/<%= cl.name %>SLIDE.jpg" id="<%= cl.name %>" class="fancybox" rel="fall_winter" title="<%= cl.name %>"><img src="images/fw_thumbnails/<%= cl.name %>.jpg" /></a>
