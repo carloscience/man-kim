@@ -34,13 +34,13 @@ Backbone.Layout.configure({
 MK.Router = Backbone.Router.extend({
   routes: {
     '': 'index',
-    'index': 'index',
-    'shop': 'shop',
-    'collections': 'collections',
-    'films': 'films',
-    'about': 'about',
-    'careers': 'careers',
-    'contact': 'contact'
+    '!index': 'index',
+    '!shop': 'shop',
+    '!collections': 'collections',
+    '!films': 'films',
+    '!about': 'about',
+    '!careers': 'careers',
+    '!contact': 'contact'
   },
 
   index: function() {
@@ -83,8 +83,6 @@ MK.Router = Backbone.Router.extend({
 
   contact: function() {
     console.log('got contact');
-    var topnav = $('#top_nav');
-    console.log("topnav is " + topnav);
     MK.addHeaderSidebar();
     MK.contact.render();
   }
@@ -204,6 +202,14 @@ DR.ThumbnailView = Backbone.Layout.extend({
   });*/
 
 $(document).ready(function() {
+  //$("html, body").animate({ scrollTop: 0 });
+  $('.topnav').on('click', function(e) {
+      $('.topnav').each(function(data) {
+        $(this).removeClass('ulineBlack');
+        $(e.currentTarget).addClass('ulineBlack');
+      });
+  });
+  
   MK.about = new MK.About();
   MK.contact = new MK.Contact();
   MK.careers = new MK.Careers();
