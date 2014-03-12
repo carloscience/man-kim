@@ -101,6 +101,7 @@ MK.Router = Backbone.Router.extend({
 
   contact: function() {
     console.log('got contact');
+    $('body').addClass('contact_bg');
     MK.addHeaderSidebar();
     MK.contact.render();
   }
@@ -219,39 +220,7 @@ MK.LeftNav = Backbone.Layout.extend({
     initialize: function(){
       console.log('left nav initialized');
     }
-});
-
-DR.TopNav = Backbone.Layout.extend({
-    template: 'top_nav',
-    el: '#main',
-    initialize: function() {
-      console.log('top nav initialized');
-    }
-  });
-
-DR.Thumbnails = Backbone.Layout.extend({
-    template: 'thumbnails',
-    el: '#thumbnails',
-    initialize: function() {
-      console.log('thumbnails el is ' + this.el);
-      $.getJSON('data/thumbnails.json', function(data) {
-        console.log(data);
-        $.extend(DR.data, data);
-        var val = 'thumbnails';
-        model = data[val];
-        DR.thumbnailView = new DR.ThumbnailView({data: model});
-      });
-      console.log('thumbnails initialized');
-    }
-  });
-
-DR.ThumbnailView = Backbone.Layout.extend({
-    template: 'thumbnails',
-    el: '#thumbnails',
-    initialize: function() {
-      this.render();
-    }
-  });*/
+});*/
 
 $(document).ready(function() {
 
