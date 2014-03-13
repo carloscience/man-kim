@@ -294,6 +294,12 @@ nav #drop_menu a {
 }
 
 /* line 264, main.scss */
+#films_main {
+  margin: 0 auto;
+  width: 640px;
+}
+
+/* line 269, main.scss */
 #about_main {
   left: 54px;
   position: relative;
@@ -301,117 +307,117 @@ nav #drop_menu a {
   left: 50px;*/
 }
 
-/* line 271, main.scss */
+/* line 276, main.scss */
 #contact_main {
   position: relative;
   left: 10px;
 }
 
-/* line 279, main.scss */
+/* line 284, main.scss */
 #about_main article {
   margin-top: 30px;
 }
 
-/* line 283, main.scss */
+/* line 288, main.scss */
 #about_description {
   width: 700px;
   margin: 0 auto;
 }
 
-/* line 288, main.scss */
+/* line 293, main.scss */
 #about_feature, #contact_feature {
   display: inline;
 }
 
-/* line 293, main.scss */
+/* line 298, main.scss */
 #about_feature img {
   max-width: 100%;
 }
 
-/* line 298, main.scss */
+/* line 303, main.scss */
 #about_download a {
   font-weight: bold;
 }
 
-/* line 303, main.scss */
+/* line 308, main.scss */
 #find_career a {
   font-weight: bold;
 }
 
-/* line 310, main.scss */
+/* line 315, main.scss */
 #careers_main h1 {
   margin-bottom: 100px;
 }
 
-/* line 315, main.scss */
+/* line 320, main.scss */
 #career_contact {
   margin: 50px 0 0 15px;
 }
-/* line 317, main.scss */
+/* line 322, main.scss */
 #career_contact a {
   font-style: italic;
   font-weight: bold;
 }
 
-/* line 323, main.scss */
+/* line 328, main.scss */
 #career_list {
   text-align: left;
   margin-left: 325px;
 }
-/* line 326, main.scss */
+/* line 331, main.scss */
 #career_list li {
   font-weight: bold;
   line-height: 35px;
 }
 
-/* line 336, main.scss */
+/* line 341, main.scss */
 #contact_feature img {
   max-width: 100%;
 }
 
-/* line 341, main.scss */
+/* line 346, main.scss */
 #contact_email {
   display: inline-block;
   text-align: left;
   margin-left: 20px;
 }
 
-/* line 347, main.scss */
+/* line 352, main.scss */
 #inquiries {
   margin-bottom: 30px;
 }
 
 @media only screen and (max-width: 860px) {
-  /* line 352, main.scss */
+  /* line 357, main.scss */
   #container {
     text-align: left;
     margin-left: 50px;
   }
 
-  /* line 356, main.scss */
+  /* line 361, main.scss */
   .pages #header {
     margin-top: 0;
     display: block;
   }
 
-  /* line 361, main.scss */
+  /* line 366, main.scss */
   #about_main {
     top: 10px;
     left: 0;
   }
 
-  /* line 365, main.scss */
+  /* line 370, main.scss */
   #content {
     top: 30px;
     left: 0;
   }
 
-  /* line 370, main.scss */
+  /* line 375, main.scss */
   #about_description {
     width: 100%;
   }
 
-  /* line 373, main.scss */
+  /* line 378, main.scss */
   #top_nav a {
     display: block;
   }

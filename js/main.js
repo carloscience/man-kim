@@ -90,6 +90,7 @@ MK.Router = Backbone.Router.extend({
     console.log('got films');
     MK.defaultStyle();
     MK.addHeaderSidebar();
+    MK.films.render();
   },
 
   about: function() {
@@ -264,6 +265,7 @@ $(document).ready(function() {
   MK.about = new MK.About();
   MK.contact = new MK.Contact();
   MK.careers = new MK.Careers();
+  MK.films = new MK.Films();
   MK.router = new MK.Router();
 
   // start router
