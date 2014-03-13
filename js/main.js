@@ -53,6 +53,7 @@ MK.Router = Backbone.Router.extend({
 
   index: function() {
     console.log('got index');
+    $('body').removeClass('contact_bg');
     var pages = $('body').attr('class');
     if (pages != undefined) {
       $('body').removeClass('pages');
@@ -63,31 +64,37 @@ MK.Router = Backbone.Router.extend({
 
   shop: function() {
     console.log('got shop');
+    $('body').removeClass('contact_bg');
     MK.addHeaderSidebar();
   },
 
   collections: function() {
+    $('body').removeClass('contact_bg');
     console.log('got collections');
     MK.addHeaderSidebar();
   },
 
   fallWinter: function() {
+    $('body').removeClass('contact_bg');
     MK.addHeaderSidebar();
     MK.getCollection('fall_winter');
   },
 
   springSummer: function() {
+    $('body').removeClass('contact_bg');
     MK.addHeaderSidebar();
     MK.getCollection('spring_summer');
   },
 
   films: function() {
     console.log('got films');
+    $('body').removeClass('contact_bg');
     MK.addHeaderSidebar();
   },
 
   about: function() {
     console.log('got about');
+    $('body').removeClass('contact_bg');
     MK.addHeaderSidebar();
     MK.about.render();
     //MK.thumbnails.render();
@@ -95,6 +102,7 @@ MK.Router = Backbone.Router.extend({
 
   careers: function() {
     console.log('got about');
+    $('body').removeClass('contact_bg');
     MK.addHeaderSidebar();
     MK.careers.render();
   },
