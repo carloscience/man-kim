@@ -66,7 +66,7 @@ nav a {
 }
 
 /* line 64, main.scss */
-.topnav {
+.topnav, .bottomnav {
   font: 0/0 a;
   text-shadow: none;
   color: transparent;
@@ -296,10 +296,24 @@ nav #drop_menu a {
 /* line 264, main.scss */
 #films_main {
   margin: 0 auto;
-  width: 640px;
+  width: 900px;
 }
 
 /* line 269, main.scss */
+#films_list {
+  text-align: left;
+  margin-left: 8%;
+}
+/* line 272, main.scss */
+#films_list li {
+  margin-top: 10px;
+}
+/* line 275, main.scss */
+#films_list a {
+  font-size: 1.1em;
+}
+
+/* line 280, main.scss */
 #about_main {
   left: 54px;
   position: relative;
@@ -307,117 +321,117 @@ nav #drop_menu a {
   left: 50px;*/
 }
 
-/* line 276, main.scss */
+/* line 287, main.scss */
 #contact_main {
   position: relative;
   left: 10px;
 }
 
-/* line 284, main.scss */
+/* line 295, main.scss */
 #about_main article {
   margin-top: 30px;
 }
 
-/* line 288, main.scss */
+/* line 299, main.scss */
 #about_description {
   width: 700px;
   margin: 0 auto;
 }
 
-/* line 293, main.scss */
+/* line 304, main.scss */
 #about_feature, #contact_feature {
   display: inline;
 }
 
-/* line 298, main.scss */
+/* line 309, main.scss */
 #about_feature img {
   max-width: 100%;
 }
 
-/* line 303, main.scss */
+/* line 314, main.scss */
 #about_download a {
   font-weight: bold;
 }
 
-/* line 308, main.scss */
+/* line 319, main.scss */
 #find_career a {
   font-weight: bold;
 }
 
-/* line 315, main.scss */
+/* line 326, main.scss */
 #careers_main h1 {
   margin-bottom: 100px;
 }
 
-/* line 320, main.scss */
+/* line 331, main.scss */
 #career_contact {
   margin: 50px 0 0 15px;
 }
-/* line 322, main.scss */
+/* line 333, main.scss */
 #career_contact a {
   font-style: italic;
   font-weight: bold;
 }
 
-/* line 328, main.scss */
+/* line 339, main.scss */
 #career_list {
   text-align: left;
   margin-left: 325px;
 }
-/* line 331, main.scss */
+/* line 342, main.scss */
 #career_list li {
   font-weight: bold;
   line-height: 35px;
 }
 
-/* line 341, main.scss */
+/* line 352, main.scss */
 #contact_feature img {
   max-width: 100%;
 }
 
-/* line 346, main.scss */
+/* line 357, main.scss */
 #contact_email {
   display: inline-block;
   text-align: left;
   margin-left: 20px;
 }
 
-/* line 352, main.scss */
+/* line 363, main.scss */
 #inquiries {
   margin-bottom: 30px;
 }
 
 @media only screen and (max-width: 860px) {
-  /* line 357, main.scss */
+  /* line 368, main.scss */
   #container {
     text-align: left;
     margin-left: 50px;
   }
 
-  /* line 361, main.scss */
+  /* line 372, main.scss */
   .pages #header {
     margin-top: 0;
     display: block;
   }
 
-  /* line 366, main.scss */
+  /* line 377, main.scss */
   #about_main {
     top: 10px;
     left: 0;
   }
 
-  /* line 370, main.scss */
+  /* line 381, main.scss */
   #content {
     top: 30px;
     left: 0;
   }
 
-  /* line 375, main.scss */
+  /* line 386, main.scss */
   #about_description {
     width: 100%;
   }
 
-  /* line 378, main.scss */
+  /* line 389, main.scss */
   #top_nav a {
     display: block;
   }

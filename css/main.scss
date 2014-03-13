@@ -61,7 +61,7 @@ nav a {
   	margin-right: 75px;
 }
 
-.topnav {
+.topnav, .bottomnav {
 	font: 0/0 a;
   	text-shadow: none;
   	color: transparent;
@@ -263,7 +263,18 @@ nav #drop_menu {
 
 #films_main {
 	margin: 0 auto;
-	width: 640px;
+	width: 900px;
+}
+
+#films_list {
+	text-align: left;
+	margin-left: 8%;
+	li {
+		margin-top: 10px;
+	}
+	a {
+		font-size: 1.1em;
+	}
 }
 
 #about_main {
