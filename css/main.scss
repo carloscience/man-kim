@@ -71,6 +71,14 @@ nav a {
   	height: 24px;
 }
 
+#container.navLeft {
+	text-align: left;
+	margin-left: 50px;
+	#contact_email {
+		margin-left: 550px;
+	}
+}
+
 #shop, #collections, #films, #about, #contact {
 	height: 22px;
 	vertical-align: top;
@@ -171,7 +179,7 @@ nav #drop_menu {
 
 #showCollections {
 	max-width: 1000px;
-	margin: 20px auto 0 auto;
+	margin: 0 auto;
 }
 
 #header_graphic {
@@ -244,7 +252,6 @@ nav #drop_menu {
 
 #content {
 	position: relative;
-	top: -30px;
 	//left: 90px;
 	//margin: -30px 0 0 90px;
 	//margin: 0 auto;

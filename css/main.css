@@ -78,136 +78,146 @@ nav a {
 }
 
 /* line 74, main.scss */
+#container.navLeft {
+  text-align: left;
+  margin-left: 50px;
+}
+/* line 77, main.scss */
+#container.navLeft #contact_email {
+  margin-left: 550px;
+}
+
+/* line 82, main.scss */
 #shop, #collections, #films, #about, #contact {
   height: 22px;
   vertical-align: top;
   margin-top: 30px;
 }
 
-/* line 80, main.scss */
+/* line 88, main.scss */
 #shop, #shop_home {
   width: 39px;
 }
 
-/* line 84, main.scss */
+/* line 92, main.scss */
 #collections, #collections_home {
   width: 98px;
 }
 
-/* line 89, main.scss */
+/* line 97, main.scss */
 .topnav:hover {
   border-bottom: 1px solid #000;
 }
 
-/* line 94, main.scss */
+/* line 102, main.scss */
 .ulineBlack {
   border-bottom: 1px solid #000;
 }
 
-/* line 99, main.scss */
+/* line 107, main.scss */
 #shop_home:hover, #collections_home:hover, #films_home:hover, #about_home:hover, #contact_home:hover {
   border-bottom: 1px solid #fff;
 }
 
-/* line 104, main.scss */
+/* line 112, main.scss */
 #shop {
   background: url("../images/menu_shop_black.png") top center no-repeat;
   width: 39px;
 }
 
-/* line 110, main.scss */
+/* line 118, main.scss */
 #shop_home {
   background: url("../images/menu_shop_white.png") top center no-repeat;
 }
 
-/* line 114, main.scss */
+/* line 122, main.scss */
 #collections {
   background: url("../images/menu_collections_black.png") top center no-repeat;
 }
 
-/* line 118, main.scss */
+/* line 126, main.scss */
 #collections_home {
   background: url("../images/menu_collections_white.png") top center no-repeat;
 }
 
-/* line 122, main.scss */
+/* line 130, main.scss */
 #films {
   background: url("../images/menu_films_black.png") top center no-repeat;
   width: 46px;
 }
 
-/* line 127, main.scss */
+/* line 135, main.scss */
 #films_home {
   background: url("../images/menu_films_white.png") top center no-repeat;
   width: 45px;
 }
 
-/* line 132, main.scss */
+/* line 140, main.scss */
 #about {
   background: url("../images/menu_about_black.png") top center no-repeat;
   width: 47px;
 }
 
-/* line 137, main.scss */
+/* line 145, main.scss */
 #about_home {
   background: url("../images/menu_about_white.png") top center no-repeat;
   width: 47px;
 }
 
-/* line 142, main.scss */
+/* line 150, main.scss */
 #contact {
   background: url("../images/menu_contact_black.png") top center no-repeat;
   width: 65px;
 }
 
-/* line 147, main.scss */
+/* line 155, main.scss */
 #contact_home {
   background: url("../images/menu_contact_white.png") top center no-repeat;
   width: 64px;
 }
 
-/* line 152, main.scss */
+/* line 160, main.scss */
 .contact_bg {
   background: url("../images/contact.jpg") top left no-repeat;
 }
 
-/* line 156, main.scss */
+/* line 164, main.scss */
 .dropdown_nav {
   display: inline-block;
   vertical-align: top;
   position: relative;
 }
 
-/* line 162, main.scss */
+/* line 170, main.scss */
 nav #drop_menu {
   display: none;
   width: 140px;
 }
-/* line 165, main.scss */
+/* line 173, main.scss */
 nav #drop_menu a {
   display: block;
   color: #767676;
   font-family: 'Gobold', serif;
 }
 
-/* line 172, main.scss */
+/* line 180, main.scss */
 #showCollections {
   max-width: 1000px;
-  margin: 20px auto 0 auto;
+  margin: 0 auto;
 }
 
-/* line 177, main.scss */
+/* line 185, main.scss */
 #header_graphic {
   max-width: 913px;
   margin: 0 auto 30px auto;
 }
 
-/* line 182, main.scss */
+/* line 190, main.scss */
 #header_graphic img {
   width: 100%;
 }
 
-/* line 186, main.scss */
+/* line 194, main.scss */
 .black_outline {
   background-color: #000;
   color: #fff;
@@ -218,73 +228,72 @@ nav #drop_menu a {
   font-size: 24px;
 }
 
-/* line 196, main.scss */
+/* line 204, main.scss */
 #align_thumbnail {
   display: inline-block;
 }
-/* line 198, main.scss */
+/* line 206, main.scss */
 #align_thumbnail img {
   width: 100%;
 }
 
-/* line 203, main.scss */
+/* line 211, main.scss */
 .portrait {
   width: 20%;
   margin: 0 13px 20px 0;
 }
 
-/* line 208, main.scss */
+/* line 216, main.scss */
 .spring_summer {
   width: 25%;
   margin: 0 13px 20px 0;
 }
 
-/* line 213, main.scss */
+/* line 221, main.scss */
 .landscape {
   width: 30%;
   margin: 0 23px 20px 0;
 }
 
-/* line 218, main.scss */
+/* line 226, main.scss */
 #header, #sidebar {
   display: none;
 }
 
-/* line 223, main.scss */
+/* line 231, main.scss */
 .pages #header, .pages #sidebar {
   display: inline-block;
 }
-/* line 226, main.scss */
+/* line 234, main.scss */
 .pages #header {
   vertical-align: top;
   margin-top: 50px;
 }
-/* line 230, main.scss */
+/* line 238, main.scss */
 .pages #bottom_nav {
   display: none;
 }
-/* line 233, main.scss */
+/* line 241, main.scss */
 .pages #home_logo {
   display: none;
 }
 
-/* line 238, main.scss */
+/* line 246, main.scss */
 #sidebar {
   background: url("../images/mk_logo_small.png") top center no-repeat;
   width: 103px;
   height: 108px;
 }
 
-/* line 245, main.scss */
+/* line 253, main.scss */
 #content {
   position: relative;
-  top: -30px;
   /*position: relative;
   top: -20px;
   left: 50px;*/
 }
 
-/* line 257, main.scss */
+/* line 264, main.scss */
 #about_main {
   left: 54px;
   position: relative;
@@ -292,117 +301,117 @@ nav #drop_menu a {
   left: 50px;*/
 }
 
-/* line 264, main.scss */
+/* line 271, main.scss */
 #contact_main {
   position: relative;
   left: 10px;
 }
 
-/* line 272, main.scss */
+/* line 279, main.scss */
 #about_main article {
   margin-top: 30px;
 }
 
-/* line 276, main.scss */
+/* line 283, main.scss */
 #about_description {
   width: 700px;
   margin: 0 auto;
 }
 
-/* line 281, main.scss */
+/* line 288, main.scss */
 #about_feature, #contact_feature {
   display: inline;
 }
 
-/* line 286, main.scss */
+/* line 293, main.scss */
 #about_feature img {
   max-width: 100%;
 }
 
-/* line 291, main.scss */
+/* line 298, main.scss */
 #about_download a {
   font-weight: bold;
 }
 
-/* line 296, main.scss */
+/* line 303, main.scss */
 #find_career a {
   font-weight: bold;
 }
 
-/* line 303, main.scss */
+/* line 310, main.scss */
 #careers_main h1 {
   margin-bottom: 100px;
 }
 
-/* line 308, main.scss */
+/* line 315, main.scss */
 #career_contact {
   margin: 50px 0 0 15px;
 }
-/* line 310, main.scss */
+/* line 317, main.scss */
 #career_contact a {
   font-style: italic;
   font-weight: bold;
 }
 
-/* line 316, main.scss */
+/* line 323, main.scss */
 #career_list {
   text-align: left;
   margin-left: 325px;
 }
-/* line 319, main.scss */
+/* line 326, main.scss */
 #career_list li {
   font-weight: bold;
   line-height: 35px;
 }
 
-/* line 329, main.scss */
+/* line 336, main.scss */
 #contact_feature img {
   max-width: 100%;
 }
 
-/* line 334, main.scss */
+/* line 341, main.scss */
 #contact_email {
   display: inline-block;
   text-align: left;
   margin-left: 20px;
 }
 
-/* line 340, main.scss */
+/* line 347, main.scss */
 #inquiries {
   margin-bottom: 30px;
 }
 
 @media only screen and (max-width: 860px) {
-  /* line 345, main.scss */
+  /* line 352, main.scss */
   #container {
     text-align: left;
     margin-left: 50px;
   }
 
-  /* line 349, main.scss */
+  /* line 356, main.scss */
   .pages #header {
     margin-top: 0;
     display: block;
   }
 
-  /* line 354, main.scss */
+  /* line 361, main.scss */
   #about_main {
     top: 10px;
     left: 0;
   }
 
-  /* line 358, main.scss */
+  /* line 365, main.scss */
   #content {
     top: 30px;
     left: 0;
   }
 
-  /* line 363, main.scss */
+  /* line 370, main.scss */
   #about_description {
     width: 100%;
   }
 
-  /* line 366, main.scss */
+  /* line 373, main.scss */
   #top_nav a {
     display: block;
   }
