@@ -58,7 +58,7 @@ ul {
   height: 203px;
   margin: 50px 0 0 50px;
   position: absolute;
-  top: 0;
+  top: 25px;
   left: 0;
 }
 
@@ -78,8 +78,8 @@ nav a {
 /* line 73, main.scss */
 #bottom_nav {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 700px;
+  left: 25%;
 }
 
 /* line 79, main.scss */
