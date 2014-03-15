@@ -53,22 +53,25 @@ MK.Router = Backbone.Router.extend({
 
   index: function() {
     console.log('got index');
+    $('#content').empty();
     MK.defaultStyle();
     var pages = $('body').attr('class');
     if (pages != undefined) {
       $('body').removeClass('pages');
-      $('#content').empty();
     }
-    //MK.thumbnails.render();
+    
+    //MK.home.render();
   },
 
   shop: function() {
     console.log('got shop');
+    $('.videoBG').hide();
     MK.defaultStyle();
     MK.addHeaderSidebar();
   },
 
   collections: function() {
+    $('.videoBG').hide();
     MK.defaultStyle();
     console.log('got collections');
     MK.addHeaderSidebar();
@@ -88,6 +91,7 @@ MK.Router = Backbone.Router.extend({
 
   films: function() {
     console.log('got films');
+    $('.videoBG').hide();
     MK.defaultStyle();
     MK.addHeaderSidebar();
     MK.films.render();
@@ -95,6 +99,7 @@ MK.Router = Backbone.Router.extend({
 
   about: function() {
     console.log('got about');
+    $('.videoBG').hide();
     MK.defaultStyle();
     MK.addHeaderSidebar();
     MK.about.render();
@@ -103,6 +108,7 @@ MK.Router = Backbone.Router.extend({
 
   careers: function() {
     console.log('got about');
+    $('.videoBG').hide();
     MK.defaultStyle();
     MK.addHeaderSidebar();
     MK.careers.render();
@@ -110,6 +116,7 @@ MK.Router = Backbone.Router.extend({
 
   contact: function() {
     console.log('got contact');
+    $('.videoBG').hide();
     $('body').addClass('contact_bg');
     $('#container').addClass('navLeft');
     $('#drop_menu').hide();
@@ -120,7 +127,11 @@ MK.Router = Backbone.Router.extend({
 });
 
 MK.defaultStyle = function() {
+  console.log('default styles');
   $('body').removeClass('contact_bg');
+  //$('.videoBG').hide();
+  //$('body').unwrap();
+  $('.videoBG_wrapper').unwrap();
   $('#container').removeClass('navLeft');
   $('#drop_menu').hide();
 }
@@ -131,6 +142,14 @@ MK.addHeaderSidebar = function() {
     $('body').addClass('pages');
   }
 }
+
+MK.Home = Backbone.Layout.extend({
+  template: 'home',
+  el: '#content',
+  initialize: function() {
+    console.log('home initialized');
+  }
+});
 
 MK.getCollection = function(collection) {
   $.getJSON('data/collections.json', function(data) {
@@ -183,7 +202,7 @@ MK.Fashion = Backbone.Layout.extend({
 });
   
 MK.Films = Backbone.Layout.extend({
-    template: 'films', // load contact template
+    template: 'films', // load films template
     el: '#content',
     initialize: function() {
       console.log('films initialized');
@@ -245,6 +264,20 @@ $(document).ready(function() {
     padding : 0,
     openEffect  : 'elastic'
   });
+
+  var videoBG = $('body').videoBG({
+    position:"fixed",
+    zIndex:0,
+    mp4:'js/assets/videoloop.mp4',
+    ogv:'js/assets/videoloop.mp4',
+    webm: 'js/assets/videoloop.webm',
+    poster:'js/assets/christmas_snow.jpg',
+    opacity:1,
+    fullscreen:true,});
+
+  /*var BV = new $.BigVideo();
+      BV.init();
+      BV.show('films/videoloop.mov', {ambient:true});*/
   //$("html, body").animate({ scrollTop: 0 });
   $('.topnav').on('click', function(e) {
       $('.topnav').each(function(data) {
@@ -262,6 +295,7 @@ $(document).ready(function() {
     $(this).hide();
   });
   
+  //MK.home = new MK.Home();
   MK.about = new MK.About();
   MK.contact = new MK.Contact();
   MK.careers = new MK.Careers();

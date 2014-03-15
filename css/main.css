@@ -2,7 +2,7 @@
 /* line 3, main.scss */
 body {
   background-color: #010004;
-  font-family: 'Cardo', serif;
+  font-family: "Cardo", serif;
 }
 
 /* line 10, main.scss */
@@ -20,12 +20,12 @@ a, a:hover, a:active, a:focus {
 
 /* line 22, main.scss */
 h1 {
-  font-family: 'Gobold', serif;
+  font-family: "Gobold", serif;
 }
 
 /* line 26, main.scss */
 h2, h3 {
-  font-family: 'Cardo', serif;
+  font-family: "Cardo", serif;
   font-weight: bold;
 }
 
@@ -57,235 +57,245 @@ ul {
   width: 207px;
   height: 203px;
   margin: 50px 0 0 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-/* line 59, main.scss */
+/* line 62, main.scss */
 nav a {
   display: inline-block;
   margin-right: 75px;
 }
 
-/* line 64, main.scss */
+/* line 67, main.scss */
 .topnav, .bottomnav {
   font: 0/0 a;
   text-shadow: none;
   color: transparent;
 }
 
-/* line 70, main.scss */
+/* line 73, main.scss */
+#bottom_nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* line 79, main.scss */
 #bottom_nav a {
   height: 24px;
 }
 
-/* line 74, main.scss */
+/* line 83, main.scss */
 #container.navLeft {
   text-align: left;
   margin-left: 50px;
 }
-/* line 77, main.scss */
+/* line 86, main.scss */
 #container.navLeft #contact_email {
   margin-left: 550px;
 }
 
-/* line 82, main.scss */
+/* line 91, main.scss */
 #shop, #collections, #films, #about, #contact {
   height: 22px;
   vertical-align: top;
   margin-top: 30px;
 }
 
-/* line 88, main.scss */
+/* line 97, main.scss */
 #shop, #shop_home {
   width: 39px;
 }
 
-/* line 92, main.scss */
+/* line 101, main.scss */
 #collections, #collections_home {
   width: 98px;
 }
 
-/* line 97, main.scss */
+/* line 106, main.scss */
 .topnav:hover {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid black;
 }
 
-/* line 102, main.scss */
+/* line 111, main.scss */
 .ulineBlack {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid black;
 }
 
-/* line 107, main.scss */
+/* line 116, main.scss */
 #shop_home:hover, #collections_home:hover, #films_home:hover, #about_home:hover, #contact_home:hover {
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid white;
 }
 
-/* line 112, main.scss */
+/* line 121, main.scss */
 #shop {
   background: url("../images/menu_shop_black.png") top center no-repeat;
   width: 39px;
 }
 
-/* line 118, main.scss */
+/* line 127, main.scss */
 #shop_home {
   background: url("../images/menu_shop_white.png") top center no-repeat;
 }
 
-/* line 122, main.scss */
+/* line 131, main.scss */
 #collections {
   background: url("../images/menu_collections_black.png") top center no-repeat;
 }
 
-/* line 126, main.scss */
+/* line 135, main.scss */
 #collections_home {
   background: url("../images/menu_collections_white.png") top center no-repeat;
 }
 
-/* line 130, main.scss */
+/* line 139, main.scss */
 #films {
   background: url("../images/menu_films_black.png") top center no-repeat;
   width: 46px;
 }
 
-/* line 135, main.scss */
+/* line 144, main.scss */
 #films_home {
   background: url("../images/menu_films_white.png") top center no-repeat;
   width: 45px;
 }
 
-/* line 140, main.scss */
+/* line 149, main.scss */
 #about {
   background: url("../images/menu_about_black.png") top center no-repeat;
   width: 47px;
 }
 
-/* line 145, main.scss */
+/* line 154, main.scss */
 #about_home {
   background: url("../images/menu_about_white.png") top center no-repeat;
   width: 47px;
 }
 
-/* line 150, main.scss */
+/* line 159, main.scss */
 #contact {
   background: url("../images/menu_contact_black.png") top center no-repeat;
   width: 65px;
 }
 
-/* line 155, main.scss */
+/* line 164, main.scss */
 #contact_home {
   background: url("../images/menu_contact_white.png") top center no-repeat;
   width: 64px;
 }
 
-/* line 160, main.scss */
+/* line 169, main.scss */
 .contact_bg {
   background: url("../images/contact.jpg") top left no-repeat;
 }
 
-/* line 164, main.scss */
+/* line 173, main.scss */
 .dropdown_nav {
   display: inline-block;
   vertical-align: top;
   position: relative;
 }
 
-/* line 170, main.scss */
+/* line 179, main.scss */
 nav #drop_menu {
   display: none;
   width: 140px;
 }
-/* line 173, main.scss */
+/* line 182, main.scss */
 nav #drop_menu a {
   display: block;
   color: #767676;
-  font-family: 'Gobold', serif;
+  font-family: "Gobold", serif;
 }
 
-/* line 180, main.scss */
+/* line 189, main.scss */
 #showCollections {
   max-width: 1000px;
   margin: 0 auto;
 }
 
-/* line 185, main.scss */
+/* line 194, main.scss */
 #header_graphic {
   max-width: 913px;
   margin: 0 auto 30px auto;
 }
 
-/* line 190, main.scss */
+/* line 199, main.scss */
 #header_graphic img {
   width: 100%;
 }
 
-/* line 194, main.scss */
+/* line 203, main.scss */
 .black_outline {
   background-color: #000;
   color: #fff;
   width: 222px;
-  font-family: 'Gobold', serif;
+  font-family: "Gobold", serif;
   margin: 0 auto 30px auto;
   font-weight: normal;
   font-size: 24px;
 }
 
-/* line 204, main.scss */
+/* line 213, main.scss */
 #align_thumbnail {
   display: inline-block;
 }
-/* line 206, main.scss */
+/* line 215, main.scss */
 #align_thumbnail img {
   width: 100%;
 }
 
-/* line 211, main.scss */
+/* line 220, main.scss */
 .portrait {
-  width: 20%;
+  width: 21.6%;
   margin: 0 13px 20px 0;
 }
 
-/* line 216, main.scss */
+/* line 225, main.scss */
 .spring_summer {
-  width: 25%;
+  width: 29%;
   margin: 0 13px 20px 0;
 }
 
-/* line 221, main.scss */
+/* line 230, main.scss */
 .landscape {
   width: 30%;
   margin: 0 23px 20px 0;
 }
 
-/* line 226, main.scss */
+/* line 235, main.scss */
 #header, #sidebar {
   display: none;
 }
 
-/* line 231, main.scss */
+/* line 240, main.scss */
 .pages #header, .pages #sidebar {
   display: inline-block;
 }
-/* line 234, main.scss */
+/* line 243, main.scss */
 .pages #header {
   vertical-align: top;
   margin-top: 50px;
 }
-/* line 238, main.scss */
+/* line 247, main.scss */
 .pages #bottom_nav {
   display: none;
 }
-/* line 241, main.scss */
+/* line 250, main.scss */
 .pages #home_logo {
   display: none;
 }
 
-/* line 246, main.scss */
+/* line 255, main.scss */
 #sidebar {
   background: url("../images/mk_logo_small.png") top center no-repeat;
   width: 103px;
   height: 108px;
 }
 
-/* line 253, main.scss */
+/* line 262, main.scss */
 #content {
   position: relative;
   /*position: relative;
@@ -293,27 +303,27 @@ nav #drop_menu a {
   left: 50px;*/
 }
 
-/* line 264, main.scss */
+/* line 273, main.scss */
 #films_main {
   margin: 0 auto;
   width: 900px;
 }
 
-/* line 269, main.scss */
+/* line 278, main.scss */
 #films_list {
   text-align: left;
   margin-left: 8%;
 }
-/* line 272, main.scss */
+/* line 281, main.scss */
 #films_list li {
   margin-top: 10px;
 }
-/* line 275, main.scss */
+/* line 284, main.scss */
 #films_list a {
   font-size: 1.1em;
 }
 
-/* line 280, main.scss */
+/* line 289, main.scss */
 #about_main {
   left: 54px;
   position: relative;
@@ -321,117 +331,117 @@ nav #drop_menu a {
   left: 50px;*/
 }
 
-/* line 287, main.scss */
+/* line 296, main.scss */
 #contact_main {
   position: relative;
   left: 10px;
 }
 
-/* line 295, main.scss */
+/* line 304, main.scss */
 #about_main article {
   margin-top: 30px;
 }
 
-/* line 299, main.scss */
+/* line 308, main.scss */
 #about_description {
   width: 700px;
   margin: 0 auto;
 }
 
-/* line 304, main.scss */
+/* line 313, main.scss */
 #about_feature, #contact_feature {
   display: inline;
 }
 
-/* line 309, main.scss */
+/* line 318, main.scss */
 #about_feature img {
   max-width: 100%;
 }
 
-/* line 314, main.scss */
+/* line 323, main.scss */
 #about_download a {
   font-weight: bold;
 }
 
-/* line 319, main.scss */
+/* line 328, main.scss */
 #find_career a {
   font-weight: bold;
 }
 
-/* line 326, main.scss */
+/* line 335, main.scss */
 #careers_main h1 {
   margin-bottom: 100px;
 }
 
-/* line 331, main.scss */
+/* line 340, main.scss */
 #career_contact {
   margin: 50px 0 0 15px;
 }
-/* line 333, main.scss */
+/* line 342, main.scss */
 #career_contact a {
   font-style: italic;
   font-weight: bold;
 }
 
-/* line 339, main.scss */
+/* line 348, main.scss */
 #career_list {
   text-align: left;
   margin-left: 325px;
 }
-/* line 342, main.scss */
+/* line 351, main.scss */
 #career_list li {
   font-weight: bold;
   line-height: 35px;
 }
 
-/* line 352, main.scss */
+/* line 361, main.scss */
 #contact_feature img {
   max-width: 100%;
 }
 
-/* line 357, main.scss */
+/* line 366, main.scss */
 #contact_email {
   display: inline-block;
   text-align: left;
   margin-left: 20px;
 }
 
-/* line 363, main.scss */
+/* line 372, main.scss */
 #inquiries {
   margin-bottom: 30px;
 }
 
 @media only screen and (max-width: 860px) {
-  /* line 368, main.scss */
+  /* line 377, main.scss */
   #container {
     text-align: left;
     margin-left: 50px;
   }
 
-  /* line 372, main.scss */
+  /* line 381, main.scss */
   .pages #header {
     margin-top: 0;
     display: block;
   }
 
-  /* line 377, main.scss */
+  /* line 386, main.scss */
   #about_main {
     top: 10px;
     left: 0;
   }
 
-  /* line 381, main.scss */
+  /* line 390, main.scss */
   #content {
     top: 30px;
     left: 0;
   }
 
-  /* line 386, main.scss */
+  /* line 395, main.scss */
   #about_description {
     width: 100%;
   }
 
-  /* line 389, main.scss */
+  /* line 398, main.scss */
   #top_nav a {
     display: block;
   }
