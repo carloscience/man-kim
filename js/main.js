@@ -59,7 +59,6 @@ MK.Router = Backbone.Router.extend({
     if (pages != undefined) {
       $('body').removeClass('pages');
     }
-    
     //MK.home.render();
   },
 
@@ -131,6 +130,7 @@ MK.defaultStyle = function() {
   $('body').removeClass('contact_bg');
   //$('.videoBG').hide();
   //$('body').unwrap();
+
   $('.videoBG_wrapper').unwrap();
   $('#container').removeClass('navLeft');
   $('#drop_menu').hide();
@@ -180,6 +180,7 @@ MK.SpringSummer = Backbone.Layout.extend({
   template: 'spring_summer',
   el: '#content',
   initialize: function() {
+    Shadowbox.init();
     console.log('collection initialized');
     this.render();
   }
@@ -259,26 +260,24 @@ MK.LeftNav = Backbone.Layout.extend({
 });*/
 
 $(document).ready(function() {
-
-  $('.fancybox').fancybox({
-    padding : 0,
-    openEffect  : 'elastic'
-  });
-
-  var videoBG = $('body').videoBG({
-    position:"fixed",
-    zIndex:0,
-    mp4:'js/assets/videoloop.mp4',
-    ogv:'js/assets/videoloop.mp4',
-    webm: 'js/assets/videoloop.webm',
-    poster:'js/assets/christmas_snow.jpg',
-    opacity:1,
-    fullscreen:true,});
-
+//Shadowbox.init();
+  
+  
   /*var BV = new $.BigVideo();
       BV.init();
       BV.show('films/videoloop.mov', {ambient:true});*/
   //$("html, body").animate({ scrollTop: 0 });
+
+  var videoBG = $('body').videoBG({
+    position:"fixed",
+    zIndex:0,
+    mp4:'js/assets/nuloop.mp4',
+    ogv:'js/assets/nuloop.ogv',
+    webm: 'js/assets/nuloop.webm',
+    poster:'js/assets/nuloop.jpg',
+    opacity:1,
+    fullscreen:true,});
+
   $('.topnav').on('click', function(e) {
       $('.topnav').each(function(data) {
         $(this).removeClass('ulineBlack');
@@ -294,8 +293,12 @@ $(document).ready(function() {
   $('#drop_menu').on('mouseleave', function(e) {
     $(this).hide();
   });
+
+  /*$('#collections_home, .dropdown_nav a').on('click', function() {
+    Shadowbox.init();
+  });*/
   
-  //MK.home = new MK.Home();
+  MK.home = new MK.Home();
   MK.about = new MK.About();
   MK.contact = new MK.Contact();
   MK.careers = new MK.Careers();

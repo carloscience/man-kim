@@ -5,7 +5,13 @@
  	</div>
  	<% _.each(model, function(cl) { %>
  		<div id="align_thumbnail" class="<%= cl.mode %>">
-			<a href="images/fw_slides/<%= cl.name %>SLIDE.jpg" id="<%= cl.name %>" class="fancybox" rel="fall_winter" title="<%= cl.name %>"><img src="images/fw_thumbnails/<%= cl.name %>.jpg" /></a>
+			<a href="images/fw_slides/<%= cl.name %>SLIDE.jpg" class="fancybox" id="<%= cl.name %>" rel="fallWinter" title="<%= cl.name %>"><img src="images/fw_thumbnails/<%= cl.name %>.jpg" /></a>
 		</div>
 	<% }); %>
 </section>
+<script type="text/javascript">
+$('.fancybox').fancybox({
+    padding : 0,
+    openEffect  : 'elastic'
+  });
+</script>

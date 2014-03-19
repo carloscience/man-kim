@@ -9,3 +9,5 @@ $ cat .gitignore
 
 # Can also ignore all directories and files in a directory.
 films/**/*
+assets/*.mp4
+assets/*.webm
