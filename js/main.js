@@ -60,7 +60,6 @@ MK.Router = Backbone.Router.extend({
     if (pages != undefined) {
       $('body').removeClass('pages');
     }
-    //MK.home.render();
   },
 
   shop: function() {
