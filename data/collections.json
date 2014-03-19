@@ -14,7 +14,7 @@
      },
      {
         "name": "4croptop",
-        "mode": "portrait"
+        "mode": "fwp_last"
      },
      {
         "name": "5croptopfull",
@@ -30,7 +30,7 @@
      },
      {
         "name": "8blouseandslacks",
-        "mode": "portrait"
+        "mode": "fwp_last"
      },
      {
         "name": "9blackblousems",
@@ -46,7 +46,7 @@
      },
      {
         "name": "12handtiesdetail",
-        "mode": "portrait"
+        "mode": "fwp_last"
      },
      {
         "name": "13cocktailtopfront",
@@ -58,7 +58,7 @@
      },
      {
         "name": "15cocktaildressms",
-        "mode": "portrait"
+        "mode": "fwl_last"
      },
      {
         "name": "16kimonoarmscrossed",
@@ -74,7 +74,7 @@
      },
      {
         "name": "19kimonoarmsopen",
-        "mode": "portrait"
+        "mode": "fwp_last"
      },
      {
         "name": "20dressclose-upside",
@@ -90,34 +90,43 @@
      },
      {
         "name": "23dresscuback",
-        "mode": "portrait"
+        "mode": "fwp_last"
      }],
      "spring_summer": [
      {
-        "name": "1sheerblousems"
+        "name": "1sheerblousems",
+        "mode": "spring_summer"
      },
      {
-        "name": "2sheerblousems"
+        "name": "2sheerblousems",
+        "mode": "spring_summer"
      },
      {
-        "name": "3sleevelessdress"
+        "name": "3sleevelessdress",
+        "mode": "ss_last"
      },
      {
-        "name": "4sheerblackdress"
+        "name": "4sheerblackdress",
+        "mode": "spring_summer"
      },
      {
-        "name": "5slipdress"
+        "name": "5slipdress",
+        "mode": "spring_summer"
      },
      {
-        "name": "6frontslipdress"
+        "name": "6frontslipdress",
+        "mode": "ss_last"
      },
      {
-        "name": "7kimonoback"
+        "name": "7kimonoback",
+        "mode": "spring_summer"
      },
      {
-        "name": "8kimonoopen"
+        "name": "8kimonoopen",
+        "mode": "spring_summer"
      },
      {
-        "name": "9kimonofront"
+        "name": "9kimonofront",
+        "mode": "ss_last"
      }]
 }

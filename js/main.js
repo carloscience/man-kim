@@ -117,7 +117,11 @@ MK.Router = Backbone.Router.extend({
     console.log('got contact');
     $('.videoBG').hide();
     $('body').addClass('contact_bg');
-    $('#container').addClass('navLeft');
+    //$('body:eq(0)').removeClass('contact_bg');
+    $('.contact_bg:eq(1)').unwrap();
+    $('.videoBG').remove();
+    //$('#container').unwrap();
+    //$('#container').addClass('navLeft');
     $('#drop_menu').hide();
     MK.addHeaderSidebar();
     MK.contact.render();
@@ -172,6 +176,8 @@ MK.FallWinter = Backbone.Layout.extend({
   el: '#content',
   initialize: function() {
     console.log('collection initialized');
+    $('.pages:eq(1)').unwrap();
+    $('.videoBG').remove();
     this.render();
   }
 });
@@ -180,8 +186,9 @@ MK.SpringSummer = Backbone.Layout.extend({
   template: 'spring_summer',
   el: '#content',
   initialize: function() {
-    Shadowbox.init();
     console.log('collection initialized');
+    $('.pages:eq(1)').unwrap();
+    $('.videoBG').remove();
     this.render();
   }
 });
@@ -261,7 +268,10 @@ MK.LeftNav = Backbone.Layout.extend({
 
 $(document).ready(function() {
 //Shadowbox.init();
-  
+  $('.fancybox').fancybox({
+    padding : 0,
+    openEffect  : 'elastic'
+  });
   
   /*var BV = new $.BigVideo();
       BV.init();
