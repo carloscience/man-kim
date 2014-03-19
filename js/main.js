@@ -42,6 +42,7 @@ MK.Router = Backbone.Router.extend({
     '': 'index',
     '!index': 'index',
     '!shop': 'shop',
+    '!shop_form': 'shop_form',
     '!collections': 'fallWinter',
     '!fall-winter': 'fallWinter',
     '!spring-summer': 'springSummer',
@@ -64,9 +65,18 @@ MK.Router = Backbone.Router.extend({
 
   shop: function() {
     console.log('got shop');
+    //$('.videoBG').hide();
+    //MK.defaultStyle();
+    //MK.addHeaderSidebar();
+    MK.shop.render();
+  },
+
+  shop_form: function() {
+    console.log('got shop');
     $('.videoBG').hide();
     MK.defaultStyle();
     MK.addHeaderSidebar();
+    MK.shopForm.render();
   },
 
   collections: function() {
@@ -178,6 +188,7 @@ MK.FallWinter = Backbone.Layout.extend({
     console.log('collection initialized');
     $('.pages:eq(1)').unwrap();
     $('.videoBG').remove();
+    $('#top_nav #drop_menu').show();
     this.render();
   }
 });
@@ -189,16 +200,9 @@ MK.SpringSummer = Backbone.Layout.extend({
     console.log('collection initialized');
     $('.pages:eq(1)').unwrap();
     $('.videoBG').remove();
+    $('#top_nav #drop_menu').show();
     this.render();
   }
-});
-
-MK.Shop = Backbone.Layout.extend({
-    template: 'shop', // load home template
-    el: '#content',
-    initialize: function(){
-      console.log('shop initialized');
-    }
 });
 
 MK.Fashion = Backbone.Layout.extend({
@@ -248,23 +252,21 @@ MK.Contact = Backbone.Layout.extend({
     }
 });
 
-/*MK.Header = Backbone.Layout.extend({
-    template: 'header', // load header template
-    el: '#header',
-    initialize: function() {
-      console.log('header initialize');
-      console.log(this.$el.html());
-      this.render(); // render header
-    }
+MK.Shop = Backbone.Layout.extend({
+  template: 'shop',
+  el: '#shop_overlay',
+  initialize: function() {
+    console.log('shop initialized');
+  }
 });
 
-MK.LeftNav = Backbone.Layout.extend({
-    template: 'sidebar',
-    el: '#left_nav',
+MK.ShopForm = Backbone.Layout.extend({
+    template: 'shop', // load home template
+    el: '#content',
     initialize: function(){
-      console.log('left nav initialized');
+      console.log('shop initialized');
     }
-});*/
+});
 
 $(document).ready(function() {
 //Shadowbox.init();
@@ -297,10 +299,15 @@ $(document).ready(function() {
 
   $('#collections').on('mouseenter', function(e) {
     console.log('rolling over collection');
-    $('#drop_menu').show();
+    $('#top_nav #drop_menu').show();
   });
 
-  $('#drop_menu').on('mouseleave', function(e) {
+  $('#collections_home').on('mouseenter', function(e) {
+    console.log('rolling over collection');
+    $('#bottom_nav #drop_menu').show();
+  })
+
+  $('#top_nav #drop_menu').on('mouseleave', function(e) {
     $(this).hide();
   });
 
@@ -313,6 +320,8 @@ $(document).ready(function() {
   MK.contact = new MK.Contact();
   MK.careers = new MK.Careers();
   MK.films = new MK.Films();
+  MK.shop = new MK.Shop();
+  MK.shopForm = new MK.ShopForm();
   MK.router = new MK.Router();
 
   // start router

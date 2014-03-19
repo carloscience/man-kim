@@ -199,35 +199,49 @@ nav a {
 }
 
 /* line 180, main.scss */
-nav #drop_menu {
+#top_nav #drop_menu {
   display: none;
   width: 140px;
 }
 /* line 183, main.scss */
-nav #drop_menu a {
+#top_nav #drop_menu a {
   display: block;
   color: #767676;
   font-family: "Gobold", serif;
 }
 
 /* line 190, main.scss */
+#bottom_nav #drop_menu {
+  display: none;
+  width: 140px;
+  position: relative;
+  top: -75px;
+}
+/* line 195, main.scss */
+#bottom_nav #drop_menu a {
+  display: block;
+  color: #fff;
+  font-family: "Gobold", serif;
+}
+
+/* line 202, main.scss */
 #showCollections {
   max-width: 1000px;
   margin: 0 auto;
 }
 
-/* line 195, main.scss */
+/* line 207, main.scss */
 #header_graphic {
   max-width: 913px;
   margin: 0 auto 30px auto;
 }
 
-/* line 200, main.scss */
+/* line 212, main.scss */
 #header_graphic img {
   width: 100%;
 }
 
-/* line 204, main.scss */
+/* line 216, main.scss */
 .black_outline {
   background-color: #000;
   color: #fff;
@@ -238,87 +252,87 @@ nav #drop_menu a {
   font-size: 24px;
 }
 
-/* line 214, main.scss */
+/* line 226, main.scss */
 #align_thumbnail {
   display: inline-block;
 }
-/* line 216, main.scss */
+/* line 228, main.scss */
 #align_thumbnail img {
   width: 100%;
 }
 
-/* line 221, main.scss */
+/* line 233, main.scss */
 .portrait {
   width: 21.6%;
   margin: 0 13px 20px 0;
 }
 
-/* line 226, main.scss */
+/* line 238, main.scss */
 .fwp_last {
   width: 21.6%;
   margin: 0 0 20px 0;
 }
 
-/* line 231, main.scss */
+/* line 243, main.scss */
 .fwl_last {
   width: 24%;
   margin: 0 0 20px 0;
 }
 
-/* line 236, main.scss */
+/* line 248, main.scss */
 #fancybox-loading {
   display: none;
 }
 
-/* line 240, main.scss */
+/* line 252, main.scss */
 .spring_summer {
   width: 29.3%;
   margin: 0 13px 20px 0;
 }
 
-/* line 245, main.scss */
+/* line 257, main.scss */
 .ss_last {
   width: 29.3%;
   margin: 0 0 20px 0;
 }
 
-/* line 250, main.scss */
+/* line 262, main.scss */
 .landscape {
   width: 31%;
   margin: 0 23px 20px 0;
 }
 
-/* line 255, main.scss */
+/* line 267, main.scss */
 #header, #sidebar {
   display: none;
 }
 
-/* line 260, main.scss */
+/* line 272, main.scss */
 .pages #header, .pages #sidebar {
   display: inline-block;
 }
-/* line 263, main.scss */
+/* line 275, main.scss */
 .pages #header {
   vertical-align: top;
   margin-top: 50px;
 }
-/* line 267, main.scss */
+/* line 279, main.scss */
 .pages #bottom_nav {
   display: none;
 }
-/* line 270, main.scss */
+/* line 282, main.scss */
 .pages #home_logo {
   display: none;
 }
 
-/* line 275, main.scss */
+/* line 287, main.scss */
 #sidebar {
   background: url("../images/mk_logo_small.png") top center no-repeat;
   width: 103px;
   height: 108px;
 }
 
-/* line 282, main.scss */
+/* line 294, main.scss */
 #content {
   position: relative;
   /*position: relative;
@@ -326,7 +340,7 @@ nav #drop_menu a {
   left: 50px;*/
 }
 
-/* line 293, main.scss */
+/* line 305, main.scss */
 #films_main {
   margin: 0 auto;
   max-width: 900px;
@@ -338,27 +352,73 @@ nav #drop_menu a {
   margin-bottom: 10px;*/
 }
 
-/*.sublimevideo-View {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}*/
-/* line 312, main.scss */
+/* line 316, main.scss */
+#shop_main {
+  position: absolute;
+  top: -475px;
+  width: 675px;
+}
+
+/* line 322, main.scss */
+.pages #shop_main {
+  position: relative;
+  top: 0;
+  margin: 0 auto;
+}
+
+/* line 328, main.scss */
+#mc_embed_signup .mc-field-group {
+  top: 375px;
+}
+
+/* line 332, main.scss */
+#mc_embed_signup .clear {
+  position: relative;
+  top: 370px;
+  text-align: center;
+  margin-left: -20px;
+}
+
+/* line 339, main.scss */
+#mc_embed_signup .button {
+  background-color: black !important;
+  color: #929292 !important;
+  text-decoration: uppercase;
+  font-family: "Gobold", serif;
+}
+
+/* line 346, main.scss */
+#mc_embed_signup .mc-field-group input {
+  width: 250px !important;
+  margin: 0 auto;
+}
+
+/* line 351, main.scss */
+#mc_embed_signup div#mce-responses {
+  top: 23.5em !important;
+  left: 3em;
+  color: #fff;
+}
+
+/* line 357, main.scss */
+#mc_embed_signup #mce-success-response {
+  color: white !important;
+}
+
+/* line 361, main.scss */
 #films_list {
   text-align: left;
 }
-/* line 314, main.scss */
+/* line 363, main.scss */
 #films_list li {
   margin-top: 10px;
 }
-/* line 317, main.scss */
+/* line 366, main.scss */
 #films_list a {
   font-size: 1.1em;
 }
 
-/* line 322, main.scss */
+/* line 371, main.scss */
 #about_main {
   left: 54px;
   position: relative;
@@ -366,121 +426,121 @@ nav #drop_menu a {
   left: 50px;*/
 }
 
-/* line 329, main.scss */
+/* line 378, main.scss */
 #contact_main {
   position: relative;
   right: 200px;
 }
 
-/* line 336, main.scss */
+/* line 385, main.scss */
 #about_main article {
   margin-top: 30px;
 }
 
-/* line 340, main.scss */
+/* line 389, main.scss */
 #about_description {
   width: 700px;
   margin: 0 auto;
 }
 
-/* line 345, main.scss */
+/* line 394, main.scss */
 #about_feature, #contact_feature {
   display: inline;
 }
 
-/* line 350, main.scss */
+/* line 399, main.scss */
 #about_feature img {
   max-width: 100%;
 }
 
-/* line 355, main.scss */
+/* line 404, main.scss */
 #about_download a {
   font-weight: bold;
 }
 
-/* line 360, main.scss */
+/* line 409, main.scss */
 #find_career a {
   font-weight: bold;
 }
 
-/* line 367, main.scss */
+/* line 416, main.scss */
 #careers_main h1 {
   margin-bottom: 100px;
 }
 
-/* line 372, main.scss */
+/* line 421, main.scss */
 #career_contact {
   margin: 50px 0 0 15px;
 }
-/* line 374, main.scss */
+/* line 423, main.scss */
 #career_contact a {
   font-style: italic;
   font-weight: bold;
 }
 
-/* line 380, main.scss */
+/* line 429, main.scss */
 #career_list {
   text-align: left;
   margin-left: 325px;
 }
-/* line 383, main.scss */
+/* line 432, main.scss */
 #career_list li {
   font-weight: bold;
   line-height: 35px;
 }
 
-/* line 393, main.scss */
+/* line 442, main.scss */
 #contact_feature img {
   max-width: 100%;
 }
 
-/* line 398, main.scss */
+/* line 447, main.scss */
 #contact_email {
   display: inline-block;
   text-align: left;
   margin-left: 20px;
 }
 
-/* line 404, main.scss */
+/* line 453, main.scss */
 #inquiries {
   margin-bottom: 30px;
 }
 
 @media only screen and (max-width: 860px) {
-  /* line 409, main.scss */
+  /* line 458, main.scss */
   #container {
     text-align: left;
     margin-left: 50px;
   }
 
-  /* line 413, main.scss */
+  /* line 462, main.scss */
   .pages #header {
     margin-top: 0;
     display: block;
   }
 
-  /* line 418, main.scss */
+  /* line 467, main.scss */
   #about_main {
     top: 10px;
     left: 0;
   }
 
-  /* line 422, main.scss */
+  /* line 471, main.scss */
   #content {
     top: 30px;
     left: 0;
   }
 
-  /* line 427, main.scss */
+  /* line 476, main.scss */
   #about_description {
     width: 100%;
   }
 
-  /* line 430, main.scss */
+  /* line 479, main.scss */
   #top_nav {
     margin-left: 0px;
   }
-  /* line 432, main.scss */
+  /* line 481, main.scss */
   #top_nav a {
     display: block;
   }

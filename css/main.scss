@@ -177,12 +177,24 @@ nav a {
 	position: relative;
 }
 
-nav #drop_menu {
+#top_nav #drop_menu {
 	display: none;
 	width: 140px;
 	a {
 		display: block;
 		color: #767676;
+		font-family: 'Gobold', serif;
+	}
+}
+
+#bottom_nav #drop_menu {
+	display: none;
+	width: 140px;
+	position: relative;
+	top: -75px;
+	a {
+		display: block;
+		color: #fff;
 		font-family: 'Gobold', serif;
 	}
 }
@@ -301,13 +313,50 @@ nav #drop_menu {
 	margin-bottom: 10px;*/
 }
 
-/*.sublimevideo-View {
+#shop_main {
 	position: absolute;
+	top: -475px;
+	width: 675px;
+}
+
+.pages #shop_main {
+	position: relative;
 	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}*/
+	margin: 0 auto;
+}
+
+#mc_embed_signup .mc-field-group {
+	top: 375px;
+}
+
+#mc_embed_signup .clear {
+	position: relative;
+	top: 370px;
+	text-align: center;
+	margin-left: -20px;
+}
+
+#mc_embed_signup .button {
+	background-color: #000 !important;
+	color: #929292 !important;
+	text-decoration: uppercase;
+	font-family: 'Gobold', serif;
+}
+
+#mc_embed_signup .mc-field-group input {
+	width: 250px !important;
+	margin: 0 auto;
+}
+
+#mc_embed_signup div#mce-responses {
+	top: 23.5em !important;
+	left: 3em;
+	color: #fff;
+}
+
+#mc_embed_signup #mce-success-response {
+	color: #fff !important;
+}
 
 #films_list {
 	text-align: left;
