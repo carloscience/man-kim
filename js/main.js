@@ -274,9 +274,6 @@ $(document).ready(function() {
     openEffect  : 'elastic'
   });
   
-  /*var BV = new $.BigVideo();
-      BV.init();
-      BV.show('films/videoloop.mov', {ambient:true});*/
   //$("html, body").animate({ scrollTop: 0 });
 
   var videoBG = $('body').videoBG({
