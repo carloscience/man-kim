@@ -2,7 +2,7 @@
 /* line 3, main.scss */
 body {
   background-color: #010004;
-  font-family: "Cardo", serif;
+  font-family: 'Cardo', serif;
 }
 
 /* line 10, main.scss */
@@ -15,17 +15,17 @@ a, a:hover, a:active, a:focus {
 
 @font-face {
   font-family: Gobold;
-  src: url("../fonts/Gobold.ttf");
+  src: url("../fonts/Gobold.ttf") format("ttf"), url("../fonts/Gobold.woff") format("woff");
 }
 
 /* line 22, main.scss */
 h1 {
-  font-family: "Gobold", serif;
+  font-family: 'Gobold', serif;
 }
 
 /* line 26, main.scss */
 h2, h3 {
-  font-family: "Cardo", serif;
+  font-family: 'Cardo', serif;
   font-weight: bold;
 }
 
@@ -116,17 +116,17 @@ nav a {
 
 /* line 107, main.scss */
 .topnav:hover {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #000;
 }
 
 /* line 112, main.scss */
 .ulineBlack {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #000;
 }
 
 /* line 117, main.scss */
 #shop_home:hover, #collections_home:hover, #films_home:hover, #about_home:hover, #contact_home:hover {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #fff;
 }
 
 /* line 122, main.scss */
@@ -207,7 +207,7 @@ nav a {
 #top_nav #drop_menu a {
   display: block;
   color: #767676;
-  font-family: "Gobold", serif;
+  font-family: 'Gobold', serif;
 }
 
 /* line 190, main.scss */
@@ -221,7 +221,7 @@ nav a {
 #bottom_nav #drop_menu a {
   display: block;
   color: #fff;
-  font-family: "Gobold", serif;
+  font-family: 'Gobold', serif;
 }
 
 /* line 202, main.scss */
@@ -246,7 +246,7 @@ nav a {
   background-color: #000;
   color: #fff;
   width: 222px;
-  font-family: "Gobold", serif;
+  font-family: 'Gobold', serif;
   margin: 0 auto 30px auto;
   font-weight: normal;
   font-size: 24px;
@@ -381,10 +381,10 @@ nav a {
 
 /* line 339, main.scss */
 #mc_embed_signup .button {
-  background-color: black !important;
+  background-color: #000 !important;
   color: #929292 !important;
   text-decoration: uppercase;
-  font-family: "Gobold", serif;
+  font-family: 'Gobold', serif;
 }
 
 /* line 346, main.scss */
@@ -402,7 +402,7 @@ nav a {
 
 /* line 357, main.scss */
 #mc_embed_signup #mce-success-response {
-  color: white !important;
+  color: #fff !important;
 }
 
 /* line 361, main.scss */
