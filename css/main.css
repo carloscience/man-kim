@@ -506,41 +506,46 @@ nav a {
   margin-bottom: 30px;
 }
 
+/* line 457, main.scss */
+.ie_bg {
+  background: url("../js/assets/nuloop.jpg");
+}
+
 @media only screen and (max-width: 860px) {
-  /* line 458, main.scss */
+  /* line 462, main.scss */
   #container {
     text-align: left;
     margin-left: 50px;
   }
 
-  /* line 462, main.scss */
+  /* line 466, main.scss */
   .pages #header {
     margin-top: 0;
     display: block;
   }
 
-  /* line 467, main.scss */
+  /* line 471, main.scss */
   #about_main {
     top: 10px;
     left: 0;
   }
 
-  /* line 471, main.scss */
+  /* line 475, main.scss */
   #content {
     top: 30px;
     left: 0;
   }
 
-  /* line 476, main.scss */
+  /* line 480, main.scss */
   #about_description {
     width: 100%;
   }
 
-  /* line 479, main.scss */
+  /* line 483, main.scss */
   #top_nav {
     margin-left: 0px;
   }
-  /* line 481, main.scss */
+  /* line 485, main.scss */
   #top_nav a {
     display: block;
   }

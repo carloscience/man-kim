@@ -16,7 +16,7 @@ a, a:hover, a:active, a:focus {
 
 @font-face {
 	font-family: Gobold;
-	src: url('../fonts/Gobold.ttf') format('ttf'), url('../fonts/Gobold.woff') format('woff');
+	src: url("../fonts/Gobold.ttf") format("ttf"), url("../fonts/Gobold.woff") format("woff");
 }
 
 h1 {
@@ -452,6 +452,10 @@ nav a {
 
 #inquiries {
 	margin-bottom: 30px;
+}
+
+.ie_bg {
+  	background: url('../js/assets/nuloop.jpg');
 }
 
 @media only screen and (max-width: 860px) {

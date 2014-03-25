@@ -11,7 +11,6 @@ Backbone.Layout.configure({
   prefix: "templates/",
 
   fetchTemplate: function(path) {
-    console.log('fetch:', arguments);
     // Concatenate the file extension.
     path = path + ".html";
 
@@ -48,12 +47,10 @@ MK.Router = Backbone.Router.extend({
     '!spring-summer': 'springSummer',
     '!films': 'films',
     '!about': 'about',
-    '!careers': 'careers',
     '!contact': 'contact'
   },
 
   index: function() {
-    console.log('got index');
     $('#content').empty();
     MK.defaultStyle();
     var pages = $('body').attr('class');
@@ -63,15 +60,10 @@ MK.Router = Backbone.Router.extend({
   },
 
   shop: function() {
-    console.log('got shop');
-    //$('.videoBG').hide();
-    //MK.defaultStyle();
-    //MK.addHeaderSidebar();
     MK.shop.render();
   },
 
   shop_form: function() {
-    console.log('got shop');
     $('.videoBG').hide();
     MK.defaultStyle();
     MK.addHeaderSidebar();
@@ -81,7 +73,6 @@ MK.Router = Backbone.Router.extend({
   collections: function() {
     $('.videoBG').hide();
     MK.defaultStyle();
-    console.log('got collections');
     MK.addHeaderSidebar();
   },
 
@@ -98,7 +89,6 @@ MK.Router = Backbone.Router.extend({
   },
 
   films: function() {
-    console.log('got films');
     $('.videoBG').hide();
     MK.defaultStyle();
     MK.addHeaderSidebar();
@@ -106,7 +96,6 @@ MK.Router = Backbone.Router.extend({
   },
 
   about: function() {
-    console.log('got about');
     $('.videoBG').hide();
     MK.defaultStyle();
     MK.addHeaderSidebar();
@@ -114,16 +103,7 @@ MK.Router = Backbone.Router.extend({
     //MK.thumbnails.render();
   },
 
-  careers: function() {
-    console.log('got about');
-    $('.videoBG').hide();
-    MK.defaultStyle();
-    MK.addHeaderSidebar();
-    MK.careers.render();
-  },
-
   contact: function() {
-    console.log('got contact');
     $('.videoBG').hide();
     $('body').addClass('contact_bg');
     //$('body:eq(0)').removeClass('contact_bg');
@@ -139,7 +119,6 @@ MK.Router = Backbone.Router.extend({
 });
 
 MK.defaultStyle = function() {
-  console.log('default styles');
   $('body').removeClass('contact_bg');
   //$('.videoBG').hide();
   //$('body').unwrap();
@@ -154,19 +133,11 @@ MK.addHeaderSidebar = function() {
   if (pages != "pages") {
     $('body').addClass('pages');
   }
+  $('body').removeClass('ie_bg');
 }
-
-MK.Home = Backbone.Layout.extend({
-  template: 'home',
-  el: '#content',
-  initialize: function() {
-    console.log('home initialized');
-  }
-});
 
 MK.getCollection = function(collection) {
   $.getJSON('data/collections.json', function(data) {
-    console.log('collection is ' + data);
         $.extend(MK.data, data);
         model = data[collection];
         switch (collection) {
@@ -184,7 +155,6 @@ MK.FallWinter = Backbone.Layout.extend({
   template: 'fall_winter',
   el: '#content',
   initialize: function() {
-    console.log('collection initialized');
     $('.pages:eq(1)').unwrap();
     $('.videoBG').remove();
     $('#top_nav #drop_menu').show();
@@ -196,7 +166,6 @@ MK.SpringSummer = Backbone.Layout.extend({
   template: 'spring_summer',
   el: '#content',
   initialize: function() {
-    console.log('collection initialized');
     $('.pages:eq(1)').unwrap();
     $('.videoBG').remove();
     $('#top_nav #drop_menu').show();
@@ -207,64 +176,37 @@ MK.SpringSummer = Backbone.Layout.extend({
 MK.Fashion = Backbone.Layout.extend({
     template: 'fashion', // load work template
     el: '#content',
-    initialize: function(){
-        console.log('fashion initialized');
-    }
+    initialize: function(){}
 });
   
 MK.Films = Backbone.Layout.extend({
     template: 'films', // load films template
     el: '#content',
-    initialize: function() {
-      console.log('films initialized');
-    }
+    initialize: function() {}
 });
 
 MK.About = Backbone.Layout.extend({
     template: 'about', // load contact template
     el: '#content',
-    events: {
-      'click .careers': 'careers'
-    },
-    initialize: function() {
-      console.log('about initialized');
-    },
-    careers: function() {
-      console.log('got careers');
-      MK.careers.render();
-    }
-});
-
-MK.Careers = Backbone.Layout.extend({
-  template: 'careers',
-  el: '#content',
-  initialize: function() {
-    console.log('careers initialized');
-  }
+    initialize: function() {}
 });
 
 MK.Contact = Backbone.Layout.extend({
     template: 'contact', // load contact template
     el: '#content',
-    initialize: function() {
-      console.log('contact initialized');
-    }
+    initialize: function() {}
 });
 
 MK.Shop = Backbone.Layout.extend({
   template: 'shop',
   el: '#shop_overlay',
-  initialize: function() {
-    console.log('shop initialized');
-  }
+  initialize: function() {}
 });
 
 MK.ShopForm = Backbone.Layout.extend({
     template: 'shop', // load home template
     el: '#content',
-    initialize: function(){
-      console.log('shop initialized');
-    }
+    initialize: function(){}
 });
 
 $(document).ready(function() {
@@ -276,15 +218,27 @@ $(document).ready(function() {
   
   //$("html, body").animate({ scrollTop: 0 });
 
-  var videoBG = $('body').videoBG({
-    position:"fixed",
-    zIndex:0,
-    mp4:'js/assets/nuloop.mp4',
-    ogv:'js/assets/nuloop.ogv',
-    webm: 'js/assets/nuloop.webm',
-    poster:'js/assets/nuloop.jpg',
-    opacity:1,
-    fullscreen:true,});
+  (function() {
+    var ua = window.navigator.userAgent;
+    var msie = ua.indexOf("MSIE ");
+
+    if (msie > 0) {     // If Internet Explorer, return version number
+      //alert(parseInt(ua.substring(msie + 5, ua.indexOf(".", msie))));
+      $('body').addClass('ie_bg');
+    }
+    else {                 // If another browser, return 0
+      $('body').videoBG({
+        position:"fixed",
+        zIndex:0,
+        mp4:'js/assets/nuloop.mp4',
+        ogv:'js/assets/nuloop.ogv',
+        webm: 'js/assets/nuloop.webm',
+        poster:'js/assets/nuloop.jpg',
+        opacity:1,
+        fullscreen:true});
+    }
+    return false;
+  })();
 
   $('.topnav').on('click', function(e) {
       $('.topnav').each(function(data) {
@@ -294,12 +248,10 @@ $(document).ready(function() {
   });
 
   $('#collections').on('mouseenter', function(e) {
-    console.log('rolling over collection');
     $('#top_nav #drop_menu').show();
   });
 
   $('#collections_home').on('mouseenter', function(e) {
-    console.log('rolling over collection');
     $('#bottom_nav #drop_menu').show();
   })
 
@@ -311,10 +263,8 @@ $(document).ready(function() {
     Shadowbox.init();
   });*/
   
-  MK.home = new MK.Home();
   MK.about = new MK.About();
   MK.contact = new MK.Contact();
-  MK.careers = new MK.Careers();
   MK.films = new MK.Films();
   MK.shop = new MK.Shop();
   MK.shopForm = new MK.ShopForm();
