@@ -371,12 +371,17 @@ nav a {
 
 #films_list {
 	text-align: left;
+	height: 150px;
 	li {
 		margin-top: 10px;
 	}
 	a {
 		font-size: 1.1em;
 	}
+}
+
+#vid2 {
+	display: none;
 }
 
 #about_main {

@@ -183,7 +183,29 @@ MK.Fashion = Backbone.Layout.extend({
 MK.Films = Backbone.Layout.extend({
     template: 'films', // load films template
     el: '#content',
-    initialize: function() {}
+    events: {
+      'click .video1': 'changeVid1',
+      'click .video2': 'changeVid2'
+    },
+    initialize: function() {},
+    changeVid1: function(e) {
+      e.preventDefault();
+      console.log('clicked video 1');
+      var video_id = $(e.currentTarget).attr('id');
+      sublime.unprepare('XlAFca21jnM');
+      sublime.prepare(video_id);
+      $('#vid2').hide();
+      $('#vid1').show();
+    },
+    changeVid2: function(e) {
+      e.preventDefault();
+      console.log('clicked video 2');
+      var video_id = $(e.currentTarget).attr('id');
+      sublime.unprepare('6TtN5c1gl8I');
+      sublime.prepare(video_id)
+      $('#vid1').hide();
+      $('#vid2').show();
+    }
 });
 
 MK.About = Backbone.Layout.extend({
@@ -254,11 +276,15 @@ $(document).ready(function() {
 
   $('#collections_home').on('mouseenter', function(e) {
     $('#bottom_nav #drop_menu').show();
-  })
+  });
 
   $('#top_nav #drop_menu').on('mouseleave', function(e) {
     $(this).hide();
   });
+
+  /*$('.video2').on('click', function(e) {
+    
+  });*/
 
   /*$('#collections_home, .dropdown_nav a').on('click', function() {
     Shadowbox.init();
