@@ -60,15 +60,16 @@ MK.Router = Backbone.Router.extend({
   },
 
   shop: function() {
-    MK.shop.render();
-  },
-
-  shop_form: function() {
     $('.videoBG').hide();
     MK.defaultStyle();
     MK.addHeaderSidebar();
-    MK.shopForm.render();
+    MK.shop.render();
   },
+
+  /*shop_form: function() {
+    
+    MK.shopForm.render();
+  },*/
 
   collections: function() {
     $('.videoBG').hide();
@@ -199,15 +200,15 @@ MK.Contact = Backbone.Layout.extend({
 
 MK.Shop = Backbone.Layout.extend({
   template: 'shop',
-  el: '#shop_overlay',
+  el: '#content',
   initialize: function() {}
 });
 
-MK.ShopForm = Backbone.Layout.extend({
+/*MK.ShopForm = Backbone.Layout.extend({
     template: 'shop', // load home template
     el: '#content',
     initialize: function(){}
-});
+});*/
 
 $(document).ready(function() {
 //Shadowbox.init();
@@ -267,7 +268,7 @@ $(document).ready(function() {
   MK.contact = new MK.Contact();
   MK.films = new MK.Films();
   MK.shop = new MK.Shop();
-  MK.shopForm = new MK.ShopForm();
+  //MK.shopForm = new MK.ShopForm();
   MK.router = new MK.Router();
 
   // start router

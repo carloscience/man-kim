@@ -2,7 +2,7 @@
 /* line 3, main.scss */
 body {
   background-color: #010004;
-  font-family: 'Cardo', serif;
+  font-family: "Cardo", serif;
 }
 
 /* line 10, main.scss */
@@ -15,17 +15,17 @@ a, a:hover, a:active, a:focus {
 
 @font-face {
   font-family: Gobold;
-  src: url("../fonts/Gobold.ttf") format("ttf"), url("../fonts/Gobold.woff") format("woff");
+  src: url("../fonts/Gobold.ttf");
 }
 
 /* line 22, main.scss */
 h1 {
-  font-family: 'Gobold', serif;
+  font-family: "Gobold", serif;
 }
 
 /* line 26, main.scss */
 h2, h3 {
-  font-family: 'Cardo', serif;
+  font-family: "Cardo", serif;
   font-weight: bold;
 }
 
@@ -82,265 +82,282 @@ nav a {
 
 /* line 77, main.scss */
 #bottom_nav {
-  position: absolute;
-  top: 700px;
-  left: 25%;
+  /*position: absolute;
+  top:600px;
+  left:25%;*/
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 50px 0;
+  position: fixed;
+  z-index: 99;
 }
 
-/* line 83, main.scss */
+/* line 89, main.scss */
 #bottom_nav a {
   height: 24px;
 }
 
-/* line 87, main.scss */
+/* line 93, main.scss */
 #contact_email {
   margin-left: 550px;
 }
 
-/* line 92, main.scss */
+/* line 98, main.scss */
 #shop, #collections, #films, #about, #contact {
   height: 22px;
   vertical-align: top;
   margin-top: 30px;
 }
 
-/* line 98, main.scss */
+/* line 104, main.scss */
 #shop, #shop_home {
   width: 39px;
 }
 
-/* line 102, main.scss */
+/* line 108, main.scss */
 #collections, #collections_home {
   width: 98px;
 }
 
-/* line 107, main.scss */
+/* line 113, main.scss */
 .topnav:hover {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid black;
 }
 
-/* line 112, main.scss */
+/* line 118, main.scss */
 .ulineBlack {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid black;
 }
 
-/* line 117, main.scss */
+/* line 123, main.scss */
 #shop_home:hover, #collections_home:hover, #films_home:hover, #about_home:hover, #contact_home:hover {
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid white;
 }
 
-/* line 122, main.scss */
+/* line 128, main.scss */
 #shop {
   background: url("../images/menu_shop_black.png") top center no-repeat;
   width: 39px;
 }
 
-/* line 128, main.scss */
+/* line 134, main.scss */
 #shop_home {
   background: url("../images/menu_shop_white.png") top center no-repeat;
 }
 
-/* line 132, main.scss */
+/* line 138, main.scss */
 #collections {
   background: url("../images/menu_collections_black.png") top center no-repeat;
 }
 
-/* line 136, main.scss */
+/* line 142, main.scss */
 #collections_home {
   background: url("../images/menu_collections_white.png") top center no-repeat;
 }
 
-/* line 140, main.scss */
+/* line 146, main.scss */
 #films {
   background: url("../images/menu_films_black.png") top center no-repeat;
   width: 46px;
 }
 
-/* line 145, main.scss */
+/* line 151, main.scss */
 #films_home {
   background: url("../images/menu_films_white.png") top center no-repeat;
   width: 45px;
 }
 
-/* line 150, main.scss */
+/* line 156, main.scss */
 #about {
   background: url("../images/menu_about_black.png") top center no-repeat;
   width: 47px;
 }
 
-/* line 155, main.scss */
+/* line 161, main.scss */
 #about_home {
   background: url("../images/menu_about_white.png") top center no-repeat;
   width: 47px;
 }
 
-/* line 160, main.scss */
+/* line 166, main.scss */
 #contact {
   background: url("../images/menu_contact_black.png") top center no-repeat;
   width: 65px;
 }
 
-/* line 165, main.scss */
+/* line 171, main.scss */
 #contact_home {
   background: url("../images/menu_contact_white.png") top center no-repeat;
   width: 64px;
 }
 
-/* line 170, main.scss */
+/* line 176, main.scss */
 .contact_bg {
   background: url("../images/CONTACT.jpg") top center no-repeat;
+  height: 916px;
 }
 
-/* line 174, main.scss */
-.dropdown_nav {
+/* line 181, main.scss */
+#bottom_nav .dropdown_nav {
+  display: inline-block;
+  position: relative;
+}
+
+/* line 186, main.scss */
+#top_nav .dropdown_nav {
   display: inline-block;
   vertical-align: top;
   position: relative;
 }
 
-/* line 180, main.scss */
+/* line 192, main.scss */
 #top_nav #drop_menu {
   display: none;
   width: 140px;
 }
-/* line 183, main.scss */
+/* line 195, main.scss */
 #top_nav #drop_menu a {
   display: block;
   color: #767676;
-  font-family: 'Gobold', serif;
+  font-family: "Gobold", serif;
 }
 
-/* line 190, main.scss */
+/* line 202, main.scss */
 #bottom_nav #drop_menu {
   display: none;
   width: 140px;
   position: relative;
-  top: -75px;
+  top: 10px;
 }
-/* line 195, main.scss */
+/* line 207, main.scss */
 #bottom_nav #drop_menu a {
   display: block;
   color: #fff;
-  font-family: 'Gobold', serif;
+  font-family: "Gobold", serif;
 }
 
-/* line 202, main.scss */
+/* line 214, main.scss */
+#drop_menu a:hover {
+  text-decoration: underline;
+}
+
+/* line 218, main.scss */
 #showCollections {
   max-width: 1000px;
   margin: 0 auto;
 }
 
-/* line 207, main.scss */
+/* line 223, main.scss */
 #header_graphic {
   max-width: 913px;
   margin: 0 auto 30px auto;
 }
 
-/* line 212, main.scss */
+/* line 228, main.scss */
 #header_graphic img {
   width: 100%;
 }
 
-/* line 216, main.scss */
+/* line 232, main.scss */
 .black_outline {
   background-color: #000;
   color: #fff;
-  width: 222px;
-  font-family: 'Gobold', serif;
+  width: 235px;
+  font-family: "Gobold", serif;
   margin: 0 auto 30px auto;
   font-weight: normal;
   font-size: 24px;
+  padding: 4px;
 }
 
-/* line 226, main.scss */
+/* line 243, main.scss */
 #align_thumbnail {
   display: inline-block;
 }
-/* line 228, main.scss */
+/* line 245, main.scss */
 #align_thumbnail img {
   width: 100%;
 }
 
-/* line 233, main.scss */
+/* line 250, main.scss */
 .portrait {
   width: 21.6%;
   margin: 0 13px 20px 0;
 }
 
-/* line 238, main.scss */
+/* line 255, main.scss */
 .fwp_last {
   width: 21.6%;
   margin: 0 0 20px 0;
 }
 
-/* line 243, main.scss */
+/* line 260, main.scss */
 .fwl_last {
   width: 24%;
   margin: 0 0 20px 0;
 }
 
-/* line 248, main.scss */
+/* line 265, main.scss */
 #fancybox-loading {
   display: none;
 }
 
-/* line 252, main.scss */
+/* line 269, main.scss */
 .spring_summer {
   width: 29.3%;
   margin: 0 13px 20px 0;
 }
 
-/* line 257, main.scss */
+/* line 274, main.scss */
 .ss_last {
   width: 29.3%;
   margin: 0 0 20px 0;
 }
 
-/* line 262, main.scss */
+/* line 279, main.scss */
 .landscape {
   width: 31%;
   margin: 0 23px 20px 0;
 }
 
-/* line 267, main.scss */
+/* line 284, main.scss */
 #header, #sidebar {
   display: none;
 }
 
-/* line 272, main.scss */
+/* line 289, main.scss */
 .pages #header, .pages #sidebar {
   display: inline-block;
 }
-/* line 275, main.scss */
+/* line 292, main.scss */
 .pages #header {
   vertical-align: top;
   margin-top: 50px;
 }
-/* line 279, main.scss */
+/* line 296, main.scss */
 .pages #bottom_nav {
   display: none;
 }
-/* line 282, main.scss */
+/* line 299, main.scss */
 .pages #home_logo {
   display: none;
 }
 
-/* line 287, main.scss */
+/* line 304, main.scss */
 #sidebar {
   background: url("../images/mk_logo_small.png") top center no-repeat;
   width: 103px;
   height: 108px;
 }
 
-/* line 294, main.scss */
+/* line 311, main.scss */
 #content {
   position: relative;
-  /*position: relative;
-  top: -20px;
-  left: 50px;*/
+  top: 20px;
 }
 
-/* line 305, main.scss */
+/* line 316, main.scss */
 #films_main {
   margin: 0 auto;
   max-width: 900px;
@@ -352,26 +369,26 @@ nav a {
   margin-bottom: 10px;*/
 }
 
-/* line 316, main.scss */
+/* line 327, main.scss */
 #shop_main {
   position: absolute;
   top: -475px;
   width: 675px;
 }
 
-/* line 322, main.scss */
+/* line 333, main.scss */
 .pages #shop_main {
   position: relative;
   top: 0;
   margin: 0 auto;
 }
 
-/* line 328, main.scss */
+/* line 339, main.scss */
 #mc_embed_signup .mc-field-group {
   top: 375px;
 }
 
-/* line 332, main.scss */
+/* line 343, main.scss */
 #mc_embed_signup .clear {
   position: relative;
   top: 370px;
@@ -379,173 +396,167 @@ nav a {
   margin-left: -20px;
 }
 
-/* line 339, main.scss */
+/* line 350, main.scss */
 #mc_embed_signup .button {
-  background-color: #000 !important;
+  background-color: black !important;
   color: #929292 !important;
   text-decoration: uppercase;
-  font-family: 'Gobold', serif;
+  font-family: "Gobold", serif;
 }
 
-/* line 346, main.scss */
+/* line 357, main.scss */
 #mc_embed_signup .mc-field-group input {
   width: 250px !important;
   margin: 0 auto;
 }
 
-/* line 351, main.scss */
+/* line 362, main.scss */
 #mc_embed_signup div#mce-responses {
   top: 23.5em !important;
   left: 3em;
   color: #fff;
 }
 
-/* line 357, main.scss */
+/* line 368, main.scss */
 #mc_embed_signup #mce-success-response {
-  color: #fff !important;
+  color: white !important;
 }
 
-/* line 361, main.scss */
+/* line 372, main.scss */
 #films_list {
   text-align: left;
 }
-/* line 363, main.scss */
+/* line 374, main.scss */
 #films_list li {
   margin-top: 10px;
 }
-/* line 366, main.scss */
+/* line 377, main.scss */
 #films_list a {
   font-size: 1.1em;
 }
 
-/* line 371, main.scss */
+/* line 382, main.scss */
 #about_main {
-  left: 54px;
   position: relative;
   /*top: -20px;
   left: 50px;*/
 }
 
-/* line 378, main.scss */
+/* line 388, main.scss */
 #contact_main {
   position: relative;
   right: 200px;
 }
 
-/* line 385, main.scss */
+/* line 395, main.scss */
 #about_main article {
   margin-top: 30px;
 }
 
-/* line 389, main.scss */
+/* line 399, main.scss */
 #about_description {
   width: 700px;
   margin: 0 auto;
 }
 
-/* line 394, main.scss */
+/* line 404, main.scss */
 #about_feature, #contact_feature {
   display: inline;
 }
 
-/* line 399, main.scss */
+/* line 409, main.scss */
 #about_feature img {
   max-width: 100%;
 }
 
-/* line 404, main.scss */
+/* line 414, main.scss */
 #about_download a {
   font-weight: bold;
 }
 
-/* line 409, main.scss */
+/* line 419, main.scss */
 #find_career a {
   font-weight: bold;
 }
 
-/* line 416, main.scss */
+/* line 426, main.scss */
 #careers_main h1 {
   margin-bottom: 100px;
 }
 
-/* line 421, main.scss */
+/* line 431, main.scss */
 #career_contact {
   margin: 50px 0 0 15px;
 }
-/* line 423, main.scss */
+/* line 433, main.scss */
 #career_contact a {
   font-style: italic;
   font-weight: bold;
 }
 
-/* line 429, main.scss */
+/* line 439, main.scss */
 #career_list {
   text-align: left;
   margin-left: 325px;
 }
-/* line 432, main.scss */
+/* line 442, main.scss */
 #career_list li {
   font-weight: bold;
   line-height: 35px;
 }
 
-/* line 442, main.scss */
+/* line 452, main.scss */
 #contact_feature img {
   max-width: 100%;
 }
 
-/* line 447, main.scss */
+/* line 457, main.scss */
 #contact_email {
   display: inline-block;
   text-align: left;
   margin-left: 20px;
 }
 
-/* line 453, main.scss */
+/* line 463, main.scss */
 #inquiries {
   margin-bottom: 30px;
 }
 
-/* line 457, main.scss */
-.ie_bg {
-  background: url("../js/assets/nuloop.jpg");
-}
-
 @media only screen and (max-width: 860px) {
-  /* line 462, main.scss */
+  /* line 468, main.scss */
   #container {
     text-align: left;
     margin-left: 50px;
   }
 
-  /* line 466, main.scss */
+  /* line 472, main.scss */
   .pages #header {
     margin-top: 0;
     display: block;
   }
 
-  /* line 471, main.scss */
+  /* line 477, main.scss */
   #about_main {
     top: 10px;
     left: 0;
   }
 
-  /* line 475, main.scss */
+  /* line 481, main.scss */
   #content {
     top: 30px;
     left: 0;
   }
 
-  /* line 480, main.scss */
+  /* line 486, main.scss */
   #about_description {
     width: 100%;
   }
 
-  /* line 483, main.scss */
+  /* line 489, main.scss */
   #top_nav {
     margin-left: 0px;
   }
-  /* line 485, main.scss */
+  /* line 491, main.scss */
   #top_nav a {
     display: block;
   }
