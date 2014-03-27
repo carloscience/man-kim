@@ -16,7 +16,7 @@ a, a:hover, a:active, a:focus {
 
 @font-face {
 	font-family: Gobold;
-	src: url('../fonts/Gobold.ttf');
+	src: url('../fonts/Gobold.ttf') format('ttf'), url('../fonts/Gobold.woff') format('woff');
 }
 
 h1 {
