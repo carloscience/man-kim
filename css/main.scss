@@ -483,6 +483,10 @@ nav a {
 	display: none;
 }
 
+.ie_bg {
+	background: url('../js/assets/nuloop.jpg') top center no-repeat;
+}
+
 @media only screen and (max-width: 860px) {
 	#container {
 		text-align: left;
