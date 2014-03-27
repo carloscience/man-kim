@@ -221,6 +221,7 @@ nav a {
 #showCollections {
 	max-width: 1000px;
 	margin: 0 auto;
+	padding-bottom: 50px;
 }
 
 #header_graphic {
@@ -474,6 +475,14 @@ nav a {
 	margin-bottom: 30px;
 }
 
+.sublimevideo-Button .sublimevideo-ImageView {
+	visibility: hidden;
+}
+
+.vid_title {
+	display: none;
+}
+
 @media only screen and (max-width: 860px) {
 	#container {
 		text-align: left;
@@ -522,6 +531,31 @@ nav a {
 		width:400px;
 		display: block;
 	}
+
+	.vid_title {
+  		display: block;
+  		margin: 0 0 10px 20px;
+  	}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) and (orientation: landscape) {
+	#home_logo {
+		margin: 0 0 0 10px;
+		top:5px;
+	}
+	
+	nav a {
+    	margin-right: 40px;
+  	}
+  	
+  	#bottom_nav {
+		padding: 30px 0 0 10px;
+  	}
+  	
+  	#contact_email {
+  		left: 272px;
+  		bottom: 73px;
+  	}
 }
 
 @media only screen and (max-width: 479px) {
@@ -559,10 +593,6 @@ nav a {
 		left: -10px;
 		max-width: 440px;
 	}
-
-	/*video {
-		width: 400px !important;
-	}*/
 
 	#contact_email {
 		color: #fff;
