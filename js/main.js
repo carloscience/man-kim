@@ -278,8 +278,12 @@ $(document).ready(function() {
     $('#bottom_nav #drop_menu').show();
   });
 
-  $('#top_nav #drop_menu').on('mouseleave', function(e) {
-    $(this).hide();
+  $('#top_nav .dropdown_nav').on('mouseleave', function(e) {
+    $(this).find('#drop_menu').hide();
+  });
+
+  $('#bottom_nav .dropdown_nav').on('mouseleave', function(e) {
+    $(this).find('#drop_menu').hide();
   });
 
   /*$('.video2').on('click', function(e) {

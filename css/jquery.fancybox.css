@@ -99,7 +99,8 @@
 
 .fancybox-close {
 	position: absolute;
-	top: -18px;
+	/*top: -18px;*/
+	top:0;
 	right: -18px;
 	width: 36px;
 	height: 36px;
@@ -124,7 +125,8 @@
 }
 
 .fancybox-next {
-	right: 0;
+	/*right: 0;*/
+	right: -21px;
 }
 
 .fancybox-nav span {

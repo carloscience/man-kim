@@ -2,7 +2,7 @@
 /* line 3, main.scss */
 body {
   background-color: #010004;
-  font-family: 'Cardo', serif;
+  font-family: "Cardo", serif;
 }
 
 /* line 10, main.scss */
@@ -20,12 +20,12 @@ a, a:hover, a:active, a:focus {
 
 /* line 22, main.scss */
 h1 {
-  font-family: 'Gobold', serif;
+  font-family: "Gobold", serif;
 }
 
 /* line 26, main.scss */
 h2, h3 {
-  font-family: 'Cardo', serif;
+  font-family: "Cardo", serif;
   font-weight: bold;
 }
 
@@ -127,17 +127,17 @@ nav a {
 
 /* line 116, main.scss */
 .topnav:hover {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid black;
 }
 
 /* line 121, main.scss */
 .ulineBlack {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid black;
 }
 
 /* line 126, main.scss */
 #shop_home:hover, #collections_home:hover, #films_home:hover, #about_home:hover, #contact_home:hover {
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid white;
 }
 
 /* line 131, main.scss */
@@ -225,7 +225,7 @@ nav a {
 #top_nav #drop_menu a {
   display: block;
   color: #767676;
-  font-family: 'Gobold', serif;
+  font-family: "Gobold", serif;
 }
 
 /* line 205, main.scss */
@@ -239,7 +239,7 @@ nav a {
 #bottom_nav #drop_menu a {
   display: block;
   color: #fff;
-  font-family: 'Gobold', serif;
+  font-family: "Gobold", serif;
 }
 
 /* line 217, main.scss */
@@ -269,7 +269,7 @@ nav a {
   background-color: #000;
   color: #fff;
   width: 235px;
-  font-family: 'Gobold', serif;
+  font-family: "Gobold", serif;
   margin: 0 auto 30px auto;
   font-weight: normal;
   font-size: 24px;
@@ -365,7 +365,7 @@ nav a {
 /* line 319, main.scss */
 #films_main {
   margin: 0 auto;
-  max-width: 900px;
+  max-width: 1025px;
   /*width: 100%;
   position: relative;
   padding-bottom: 56.25%;
@@ -374,26 +374,26 @@ nav a {
   margin-bottom: 10px;*/
 }
 
-/* line 330, main.scss */
+/* line 331, main.scss */
 #shop_main {
   position: absolute;
   top: -475px;
   width: 675px;
 }
 
-/* line 336, main.scss */
+/* line 337, main.scss */
 .pages #shop_main {
   position: relative;
   top: 0;
   margin: 0 auto;
 }
 
-/* line 342, main.scss */
+/* line 343, main.scss */
 #mc_embed_signup .mc-field-group {
   top: 375px;
 }
 
-/* line 346, main.scss */
+/* line 347, main.scss */
 #mc_embed_signup .clear {
   position: relative;
   top: 370px;
@@ -401,173 +401,174 @@ nav a {
   margin-left: -20px;
 }
 
-/* line 353, main.scss */
+/* line 354, main.scss */
 #mc_embed_signup .button {
-  background-color: #000 !important;
+  background-color: black !important;
   color: #929292 !important;
   text-decoration: uppercase;
-  font-family: 'Gobold', serif;
+  font-family: "Gobold", serif;
 }
 
-/* line 360, main.scss */
+/* line 361, main.scss */
 #mc_embed_signup .mc-field-group input {
   width: 250px !important;
   margin: 0 auto;
 }
 
-/* line 365, main.scss */
+/* line 366, main.scss */
 #mc_embed_signup div#mce-responses {
   top: 23.5em !important;
   left: 3em;
   color: #fff;
 }
 
-/* line 371, main.scss */
+/* line 372, main.scss */
 #mc_embed_signup #mce-success-response {
-  color: #fff !important;
+  color: white !important;
 }
 
-/* line 375, main.scss */
+/* line 376, main.scss */
 #films_list {
   text-align: left;
   height: 150px;
+  padding-left: 15px;
 }
-/* line 378, main.scss */
+/* line 380, main.scss */
 #films_list li {
   margin-top: 10px;
 }
-/* line 381, main.scss */
+/* line 383, main.scss */
 #films_list a {
   font-size: 1.1em;
 }
 
-/* line 386, main.scss */
+/* line 388, main.scss */
 #vid2 {
   display: none;
 }
 
-/* line 390, main.scss */
+/* line 392, main.scss */
 #about_main {
   position: relative;
   /*top: -20px;
   left: 50px;*/
 }
 
-/* line 396, main.scss */
+/* line 398, main.scss */
 #contact_main {
   position: relative;
   right: 200px;
 }
 
-/* line 403, main.scss */
+/* line 405, main.scss */
 #about_main article {
   margin-top: 30px;
 }
 
-/* line 407, main.scss */
+/* line 409, main.scss */
 #about_description {
   width: 700px;
   margin: 0 auto;
 }
 
-/* line 412, main.scss */
+/* line 414, main.scss */
 #about_feature, #contact_feature {
   display: inline;
 }
 
-/* line 417, main.scss */
+/* line 419, main.scss */
 #about_feature img {
   max-width: 100%;
 }
 
-/* line 422, main.scss */
+/* line 424, main.scss */
 #about_download a {
   font-weight: bold;
 }
 
-/* line 427, main.scss */
+/* line 429, main.scss */
 #find_career a {
   font-weight: bold;
 }
 
-/* line 434, main.scss */
+/* line 436, main.scss */
 #careers_main h1 {
   margin-bottom: 100px;
 }
 
-/* line 439, main.scss */
+/* line 441, main.scss */
 #career_contact {
   margin: 50px 0 0 15px;
 }
-/* line 441, main.scss */
+/* line 443, main.scss */
 #career_contact a {
   font-style: italic;
   font-weight: bold;
 }
 
-/* line 447, main.scss */
+/* line 449, main.scss */
 #career_list {
   text-align: left;
   margin-left: 325px;
 }
-/* line 450, main.scss */
+/* line 452, main.scss */
 #career_list li {
   font-weight: bold;
   line-height: 35px;
 }
 
-/* line 460, main.scss */
+/* line 462, main.scss */
 #contact_feature img {
   max-width: 100%;
 }
 
-/* line 465, main.scss */
+/* line 467, main.scss */
 #contact_email {
   display: inline-block;
   text-align: left;
   margin-left: 20px;
 }
 
-/* line 471, main.scss */
+/* line 473, main.scss */
 #inquiries {
   margin-bottom: 30px;
 }
 
 @media only screen and (max-width: 860px) {
-  /* line 476, main.scss */
+  /* line 478, main.scss */
   #container {
     text-align: left;
     margin-left: 50px;
   }
 
-  /* line 480, main.scss */
+  /* line 482, main.scss */
   .pages #header {
     margin-top: 0;
     display: block;
   }
 
-  /* line 485, main.scss */
+  /* line 487, main.scss */
   #about_main {
     top: 10px;
     left: 0;
   }
 
-  /* line 489, main.scss */
+  /* line 491, main.scss */
   #content {
     top: 30px;
     left: 0;
   }
 
-  /* line 494, main.scss */
+  /* line 496, main.scss */
   #about_description {
     width: 100%;
   }
 
-  /* line 497, main.scss */
+  /* line 499, main.scss */
   #top_nav {
     margin-left: 0px;
   }
-  /* line 499, main.scss */
+  /* line 501, main.scss */
   #top_nav a {
     display: block;
   }

@@ -318,7 +318,8 @@ nav a {
 
 #films_main {
 	margin: 0 auto;
-	max-width: 900px;
+	max-width: 1025px;
+	//max-width: 900px;
 	/*width: 100%;
 	position: relative;
 	padding-bottom: 56.25%;
@@ -375,6 +376,7 @@ nav a {
 #films_list {
 	text-align: left;
 	height: 150px;
+	padding-left: 15px;
 	li {
 		margin-top: 10px;
 	}
