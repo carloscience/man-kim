@@ -98,11 +98,9 @@ nav a {
   height: 24px;
 }
 
-/* line 93, main.scss */
-#contact_email {
-  margin-left: 550px;
-}
-
+/*#contact_email {
+	margin-left: 550px;
+}*/
 /* line 97, main.scss */
 #contact_sales {
   height: 200px;
@@ -526,7 +524,6 @@ nav a {
 #contact_email {
   display: inline-block;
   text-align: left;
-  margin-left: 20px;
 }
 
 /* line 473, main.scss */
@@ -538,7 +535,7 @@ nav a {
   /* line 478, main.scss */
   #container {
     text-align: left;
-    margin-left: 50px;
+    margin-left: 15px;
   }
 
   /* line 482, main.scss */
@@ -571,5 +568,91 @@ nav a {
   /* line 501, main.scss */
   #top_nav a {
     display: block;
+  }
+
+  /* line 506, main.scss */
+  #contact_email {
+    position: relative;
+    left: 350px;
+    bottom: 150px;
+  }
+
+  /* line 512, main.scss */
+  #films_list a {
+    display: none;
+  }
+
+  /* line 516, main.scss */
+  #vid1 {
+    width: 400px;
+    margin-bottom: 20px;
+  }
+
+  /* line 521, main.scss */
+  #vid2 {
+    width: 400px;
+    display: block;
+  }
+}
+@media only screen and (max-width: 479px) {
+  /* line 528, main.scss */
+  #home_logo {
+    margin: 10px 0 0 20px;
+  }
+
+  /* line 532, main.scss */
+  #bottom_nav {
+    left: 20px;
+  }
+
+  /* line 536, main.scss */
+  nav a {
+    margin-right: 50px;
+  }
+
+  /* line 540, main.scss */
+  #mc_embed_signup {
+    height: 300px !important;
+    width: 400px !important;
+    background-size: cover !important;
+    padding-top: 46% !important;
+  }
+
+  /* line 547, main.scss */
+  #mc_embed_signup .mc-field-group {
+    top: -80px;
+  }
+
+  /* line 551, main.scss */
+  #mc_embed_signup .button {
+    position: relative;
+    top: -463px;
+    display: block;
+  }
+
+  /* line 557, main.scss */
+  #films_main {
+    position: relative;
+    left: -10px;
+    max-width: 440px;
+  }
+
+  /*video {
+  	width: 400px !important;
+  }*/
+  /* line 567, main.scss */
+  #contact_email {
+    color: #fff;
+  }
+  /* line 569, main.scss */
+  #contact_email a {
+    color: #fff;
+  }
+
+  /* line 574, main.scss */
+  #top_nav #drop_menu {
+    position: absolute;
+    left: 105px;
+    top: 27px;
   }
 }

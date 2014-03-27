@@ -90,9 +90,9 @@ nav a {
   	height: 24px;
 }
 
-#contact_email {
+/*#contact_email {
 	margin-left: 550px;
-}
+}*/
 
 #contact_sales {
 	height: 200px;
@@ -467,7 +467,7 @@ nav a {
 #contact_email {
 	display: inline-block;
 	text-align: left;
-	margin-left: 20px;
+	//margin-left: 20px;
 }
 
 #inquiries {
@@ -477,7 +477,7 @@ nav a {
 @media only screen and (max-width: 860px) {
 	#container {
 		text-align: left;
-		margin-left: 50px;
+		margin-left: 15px;
 	}
 	.pages #header {
 		margin-top: 0;
@@ -502,4 +502,79 @@ nav a {
 			display: block;
 		}
 	}
+
+	#contact_email {
+		position: relative;
+		left: 350px;
+		bottom: 150px;
+	}
+
+	#films_list a {
+		display: none;
+	}
+
+	#vid1 {
+		width:400px;
+		margin-bottom: 20px;
+	}
+
+	#vid2 {
+		width:400px;
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 479px) {
+	#home_logo {
+		margin: 10px 0 0 20px;
+	}
+
+	#bottom_nav {
+		left: 20px;
+	}
+
+	nav a {
+		margin-right: 50px;
+	}
+
+	#mc_embed_signup {
+		height: 300px !important;
+		width: 400px !important;
+		background-size: cover !important;
+		padding-top: 46% !important;
+	}
+
+	#mc_embed_signup .mc-field-group {
+		top: -80px;
+	}
+
+	#mc_embed_signup .button {
+		position: relative;
+		top: -463px;
+		display: block;
+	}
+
+	#films_main {
+		position: relative;
+		left: -10px;
+		max-width: 440px;
+	}
+
+	/*video {
+		width: 400px !important;
+	}*/
+
+	#contact_email {
+		color: #fff;
+		a {
+			color: #fff;
+		}
+	}
+
+	#top_nav #drop_menu {
+		position: absolute;
+		left: 105px;
+		top: 27px;
+	}
+
 }
