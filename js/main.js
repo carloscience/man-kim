@@ -190,7 +190,6 @@ MK.Films = Backbone.Layout.extend({
     initialize: function() {},
     changeVid1: function(e) {
       e.preventDefault();
-      console.log('clicked video 1');
       var video_id = $(e.currentTarget).attr('id');
       sublime.unprepare('XlAFca21jnM');
       sublime.prepare(video_id);
@@ -199,7 +198,6 @@ MK.Films = Backbone.Layout.extend({
     },
     changeVid2: function(e) {
       e.preventDefault();
-      console.log('clicked video 2');
       var video_id = $(e.currentTarget).attr('id');
       sublime.unprepare('6TtN5c1gl8I');
       sublime.prepare(video_id)
@@ -256,7 +254,7 @@ $(document).ready(function() {
         mp4:'js/assets/nuloop.mp4',
         ogv:'js/assets/nuloop.ogv',
         webm: 'js/assets/nuloop.webm',
-        poster:'js/assets/nuloop.jpg',
+        poster:'js/assets/poster.jpg',
         opacity:1,
         fullscreen:true});
     }
