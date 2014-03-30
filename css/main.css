@@ -2,7 +2,7 @@
 /* line 3, main.scss */
 body {
   background-color: #010004;
-  font-family: 'Cardo', serif;
+  font-family: "Cardo", serif;
 }
 
 /* line 10, main.scss */
@@ -20,12 +20,12 @@ a, a:hover, a:active, a:focus {
 
 /* line 22, main.scss */
 h1 {
-  font-family: 'Gobold', serif;
+  font-family: "Gobold", serif;
 }
 
 /* line 26, main.scss */
 h2, h3 {
-  font-family: 'Cardo', serif;
+  font-family: "Cardo", serif;
   font-weight: bold;
 }
 
@@ -125,17 +125,17 @@ nav a {
 
 /* line 116, main.scss */
 .topnav:hover {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid black;
 }
 
 /* line 121, main.scss */
 .ulineBlack {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid black;
 }
 
 /* line 126, main.scss */
 #shop_home:hover, #collections_home:hover, #films_home:hover, #about_home:hover, #contact_home:hover {
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid white;
 }
 
 /* line 131, main.scss */
@@ -223,7 +223,7 @@ nav a {
 #top_nav #drop_menu a {
   display: block;
   color: #767676;
-  font-family: 'Gobold', serif;
+  font-family: "Gobold", serif;
 }
 
 /* line 205, main.scss */
@@ -237,7 +237,7 @@ nav a {
 #bottom_nav #drop_menu a {
   display: block;
   color: #fff;
-  font-family: 'Gobold', serif;
+  font-family: "Gobold", serif;
 }
 
 /* line 217, main.scss */
@@ -268,7 +268,7 @@ nav a {
   background-color: #000;
   color: #fff;
   width: 235px;
-  font-family: 'Gobold', serif;
+  font-family: "Gobold", serif;
   margin: 0 auto 30px auto;
   font-weight: normal;
   font-size: 24px;
@@ -402,10 +402,10 @@ nav a {
 
 /* line 355, main.scss */
 #mc_embed_signup .button {
-  background-color: #000 !important;
+  background-color: black !important;
   color: #929292 !important;
   text-decoration: uppercase;
-  font-family: 'Gobold', serif;
+  font-family: "Gobold", serif;
 }
 
 /* line 362, main.scss */
@@ -423,7 +423,7 @@ nav a {
 
 /* line 373, main.scss */
 #mc_embed_signup #mce-success-response {
-  color: #fff !important;
+  color: white !important;
 }
 
 /* line 377, main.scss */
@@ -431,231 +431,233 @@ nav a {
   text-align: left;
   height: 150px;
   padding-left: 15px;
+  padding-top: 10px;
 }
-/* line 381, main.scss */
+/* line 382, main.scss */
 #films_list li {
   margin-top: 10px;
 }
-/* line 384, main.scss */
+/* line 385, main.scss */
 #films_list a {
   font-size: 1.1em;
+  text-decoration: underline;
 }
 
-/* line 389, main.scss */
+/* line 391, main.scss */
 #vid2 {
   display: none;
 }
 
-/* line 393, main.scss */
+/* line 395, main.scss */
 #about_main {
   position: relative;
   /*top: -20px;
   left: 50px;*/
 }
 
-/* line 399, main.scss */
+/* line 401, main.scss */
 #contact_main {
   position: relative;
   right: 200px;
 }
 
-/* line 406, main.scss */
+/* line 408, main.scss */
 #about_main article {
   margin-top: 30px;
 }
 
-/* line 410, main.scss */
+/* line 412, main.scss */
 #about_description {
   width: 700px;
   margin: 0 auto;
 }
 
-/* line 415, main.scss */
+/* line 417, main.scss */
 #about_feature, #contact_feature {
   display: inline;
 }
 
-/* line 420, main.scss */
+/* line 422, main.scss */
 #about_feature img {
   max-width: 100%;
 }
 
-/* line 425, main.scss */
+/* line 427, main.scss */
 #about_download a {
   font-weight: bold;
 }
 
-/* line 430, main.scss */
+/* line 432, main.scss */
 #find_career a {
   font-weight: bold;
 }
 
-/* line 437, main.scss */
+/* line 439, main.scss */
 #careers_main h1 {
   margin-bottom: 100px;
 }
 
-/* line 442, main.scss */
+/* line 444, main.scss */
 #career_contact {
   margin: 50px 0 0 15px;
 }
-/* line 444, main.scss */
+/* line 446, main.scss */
 #career_contact a {
   font-style: italic;
   font-weight: bold;
 }
 
-/* line 450, main.scss */
+/* line 452, main.scss */
 #career_list {
   text-align: left;
   margin-left: 325px;
 }
-/* line 453, main.scss */
+/* line 455, main.scss */
 #career_list li {
   font-weight: bold;
   line-height: 35px;
 }
 
-/* line 463, main.scss */
+/* line 465, main.scss */
 #contact_feature img {
   max-width: 100%;
 }
 
-/* line 468, main.scss */
+/* line 470, main.scss */
 #contact_email {
   display: inline-block;
   text-align: left;
 }
 
-/* line 474, main.scss */
+/* line 476, main.scss */
 #inquiries {
   margin-bottom: 30px;
 }
 
-/* line 478, main.scss */
+/* line 480, main.scss */
 .sublimevideo-Button .sublimevideo-ImageView {
   visibility: hidden;
 }
 
-/* line 482, main.scss */
+/* line 484, main.scss */
 .vid_title {
   display: none;
 }
 
-/* line 486, main.scss */
+/* line 488, main.scss */
 .ie_bg {
   background: url("../js/assets/nuloop.jpg") top center no-repeat;
 }
 
 @media only screen and (max-width: 860px) {
-  /* line 491, main.scss */
+  /* line 493, main.scss */
   #container {
     text-align: left;
     margin-left: 15px;
   }
 
-  /* line 495, main.scss */
+  /* line 497, main.scss */
   .pages #header {
     margin-top: 0;
     display: block;
   }
 
-  /* line 500, main.scss */
+  /* line 502, main.scss */
   #about_main {
     top: 10px;
     left: 0;
   }
 
-  /* line 504, main.scss */
+  /* line 506, main.scss */
   #content {
     top: 30px;
     left: 0;
   }
 
-  /* line 509, main.scss */
+  /* line 511, main.scss */
   #about_description {
     width: 100%;
   }
 
-  /* line 512, main.scss */
+  /* line 514, main.scss */
   #top_nav {
     margin-left: 0px;
   }
-  /* line 514, main.scss */
+  /* line 516, main.scss */
   #top_nav a {
     display: block;
   }
 
-  /* line 519, main.scss */
+  /* line 521, main.scss */
   #contact_email {
     position: relative;
     left: 350px;
     bottom: 150px;
   }
 
-  /* line 525, main.scss */
+  /* line 527, main.scss */
   #films_list a {
     display: none;
   }
 
-  /* line 529, main.scss */
+  /* line 531, main.scss */
   #vid1 {
     width: 400px;
     margin-bottom: 20px;
   }
 
-  /* line 534, main.scss */
+  /* line 536, main.scss */
   #vid2 {
     width: 400px;
     display: block;
   }
 
-  /* line 539, main.scss */
+  /* line 541, main.scss */
   .vid_title {
     display: block;
     margin: 0 0 10px 20px;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) and (orientation: landscape) {
-  /* line 546, main.scss */
+  /* line 548, main.scss */
   #home_logo {
     margin: 0 0 0 10px;
     top: 5px;
   }
 
-  /* line 551, main.scss */
+  /* line 553, main.scss */
   nav a {
     margin-right: 40px;
   }
 
-  /* line 555, main.scss */
+  /* line 557, main.scss */
   #bottom_nav {
     padding: 30px 0 0 10px;
   }
 
-  /* line 559, main.scss */
+  /* line 561, main.scss */
   #contact_email {
     left: 272px;
     bottom: 73px;
   }
 }
 @media only screen and (max-width: 479px) {
-  /* line 566, main.scss */
+  /* line 568, main.scss */
   #home_logo {
     margin: 10px 0 0 20px;
   }
 
-  /* line 570, main.scss */
+  /* line 572, main.scss */
   #bottom_nav {
     left: 20px;
   }
 
-  /* line 574, main.scss */
+  /* line 576, main.scss */
   nav a {
     margin-right: 50px;
   }
 
-  /* line 578, main.scss */
+  /* line 580, main.scss */
   #mc_embed_signup {
     height: 300px !important;
     width: 400px !important;
@@ -663,35 +665,35 @@ nav a {
     padding-top: 46% !important;
   }
 
-  /* line 585, main.scss */
+  /* line 587, main.scss */
   #mc_embed_signup .mc-field-group {
     top: -80px;
   }
 
-  /* line 589, main.scss */
+  /* line 591, main.scss */
   #mc_embed_signup .button {
     position: relative;
     top: -463px;
     display: block;
   }
 
-  /* line 595, main.scss */
+  /* line 597, main.scss */
   #films_main {
     position: relative;
     left: -10px;
     max-width: 440px;
   }
 
-  /* line 601, main.scss */
+  /* line 603, main.scss */
   #contact_email {
     color: #fff;
   }
-  /* line 603, main.scss */
+  /* line 605, main.scss */
   #contact_email a {
     color: #fff;
   }
 
-  /* line 608, main.scss */
+  /* line 610, main.scss */
   #top_nav #drop_menu {
     position: absolute;
     left: 105px;

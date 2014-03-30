@@ -378,11 +378,13 @@ nav a {
 	text-align: left;
 	height: 150px;
 	padding-left: 15px;
+	padding-top: 10px;
 	li {
 		margin-top: 10px;
 	}
 	a {
 		font-size: 1.1em;
+		text-decoration: underline;
 	}
 }
 
