@@ -343,6 +343,7 @@ nav a {
 
 #mc_embed_signup .mc-field-group {
 	top: 375px;
+	text-align: center;
 }
 
 #mc_embed_signup .clear {
@@ -372,6 +373,14 @@ nav a {
 
 #mc_embed_signup #mce-success-response {
 	color: #fff !important;
+}
+
+#mc_embed_signup div.mce_inline_error {
+	position: absolute;
+	width: 248px;
+	text-align: center;
+	top: -30px;
+	left: 191px;
 }
 
 #films_list {
@@ -586,12 +595,23 @@ nav a {
 
 	#mc_embed_signup .mc-field-group {
 		top: -80px;
+		text-align: center;
 	}
 
 	#mc_embed_signup .button {
 		position: relative;
 		top: -463px;
 		display: block;
+	}
+
+	#mc_embed_signup div.mce_inline_error {
+		left: 62px;
+	}
+
+	#mc_embed_signup div#mce-responses {
+		margin: -370px 5%;
+		color: #000;
+		position: relative;
 	}
 
 	#films_main {
